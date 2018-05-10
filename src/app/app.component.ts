@@ -7,6 +7,7 @@ import { FileUpload } from 'primeng/primeng';
 import { TableModule } from 'primeng/table';
 import { Profiler } from './profiler';
 import { DoughnutChartDemo } from './doughnutchartdemo';
+import {CarouselModule} from 'primeng/carousel';
 //import { Chart } from 'chart.js';
 
 @Component({
@@ -19,15 +20,21 @@ export class AppComponent {
   @ViewChild('fileInput') fileInput: FileUpload;
 
   profilerList: Profiler[];
-  profilerList1: Profiler[];
+  aa: any;
+
   files: TreeNode[];
   http: Http;
   dougnut: DoughnutChartDemo;
 
   constructor(private http1: Http) {
     this.http = http1;
+
+    this.dougnut = new DoughnutChartDemo();
+    //this.aa = {[{ "name":  "nam1" }, { "name": "nam2" }  ]};
+    //console.log("============>"+this.aa);
     //this.dougnut = new DoughnutChartDemo();
-    //console.log("dougnut:" + this.dougnut);
+    console.log("dougnut:" + this.dougnut.data.labels.length);
+
   }
 
 

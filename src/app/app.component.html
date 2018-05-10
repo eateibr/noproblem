@@ -196,50 +196,102 @@
           <div class="col-md-3">
             <div class="card p-30">
               <div class="media">
-                <div class="media-body media-text-middle">
+                <li class="media-body media-text-middle">
 
                   <p>
                     <input type="file" id="fileInput" placeholder="Select file..." />
                     <button type="button" (click)="startUpload()">Load File</button>
                     <br /><br /><br />
 
-                    <p-table [value]="profilerList[0].addedScripts.scripts">
-                      <ng-template pTemplate="header">
-                        <tr style="background-color:greenyellow;font-weight: 900;">
-                          <th style="font-weight: 900;">TotalTime</th>
-                          <th style="font-weight: 900;">Status</th>
-                          <th style="font-weight: 900;">TotalExecTimeDiff</th>
-                          <th style="font-weight: 900;">ExecCountDiff</th>
-                          <th style="font-weight: 900;">Status</th>
-                        </tr>
-                      </ng-template>
-                      <ng-template pTemplate="body" let-scripts>
-                        <tr style="background-color:whitesmoke">
-                          <td style="color:black">{{scripts.name}}</td>
-                          <td style="color:black">{{scripts.execTimeDiff}}</td>
-                          <td style="color:black">{{scripts.totalExecTimeDiff}}</td>
-                          <td style="color:black">{{scripts.execCountDiff}}</td>
-                          <td style="color:black">{{scripts.status}}</td>
-                        </tr>
-                      </ng-template>
-                    </p-table>
 
-                  </p>
 
                   <p>
 
                     <br />
 
+                    <p-accordion *ngFor="let prof of profilerList">
+                      <p-accordionTab header="Added Scripts {{prof.name}} - Time Difference: {{prof.timeImprovement}}">
+                        <p-table [value]="prof.addedScripts.scripts">
+                          <ng-template pTemplate="header">
+                            <tr style="background-color:greenyellow;font-weight: 900;">
+                              <th style="font-weight: 900;">TotalTime</th>
+                              <th style="font-weight: 900;">Status</th>
+                              <th style="font-weight: 900;">TotalExecTimeDiff</th>
+                              <th style="font-weight: 900;">ExecCountDiff</th>
+                              <th style="font-weight: 900;">Status</th>
+                            </tr>
+                          </ng-template>
+                          <ng-template pTemplate="body" let-scripts>
+                            <tr style="background-color:whitesmoke">
+                              <td style="color:black">{{scripts.name}}</td>
+                              <td style="color:black">{{scripts.execTimeDiff}}</td>
+                              <td style="color:black">{{scripts.totalExecTimeDiff}}</td>
+                              <td style="color:black">{{scripts.execCountDiff}}</td>
+                              <td style="color:black">{{scripts.status}}</td>
+                            </tr>
+                          </ng-template>
+                        </p-table>
+                      </p-accordionTab>
+
+                      <p-accordionTab header="Removed Scripts {{prof.name}} - Time Difference: {{prof.timeImprovement}}">
+                        <p-table [value]="prof.removedScripts.scripts">
+                          <ng-template pTemplate="header">
+                            <tr style="background-color:greenyellow;font-weight: 900;">
+                              <th style="font-weight: 900;">TotalTime</th>
+                              <th style="font-weight: 900;">Status</th>
+                              <th style="font-weight: 900;">TotalExecTimeDiff</th>
+                              <th style="font-weight: 900;">ExecCountDiff</th>
+                              <th style="font-weight: 900;">Status</th>
+                            </tr>
+                          </ng-template>
+                          <ng-template pTemplate="body" let-scripts>
+                            <tr style="background-color:whitesmoke">
+                              <td style="color:black">{{scripts.name}}</td>
+                              <td style="color:black">{{scripts.execTimeDiff}}</td>
+                              <td style="color:black">{{scripts.totalExecTimeDiff}}</td>
+                              <td style="color:black">{{scripts.execCountDiff}}</td>
+                              <td style="color:black">{{scripts.status}}</td>
+                            </tr>
+                          </ng-template>
+                        </p-table>
+                      </p-accordionTab>
+
+                      <p-accordionTab header="Existing Scripts {{prof.name}} - Time Difference: {{prof.timeImprovement}}">
+                        <p-table [value]="prof.existingScripts.scripts">
+                          <ng-template pTemplate="header">
+                            <tr style="background-color:greenyellow;font-weight: 900;">
+                              <th style="font-weight: 900;">TotalTime</th>
+                              <th style="font-weight: 900;">Status</th>
+                              <th style="font-weight: 900;">TotalExecTimeDiff</th>
+                              <th style="font-weight: 900;">ExecCountDiff</th>
+                              <th style="font-weight: 900;">Status</th>
+                            </tr>
+                          </ng-template>
+                          <ng-template pTemplate="body" let-scripts>
+                            <tr style="background-color:whitesmoke">
+                              <td style="color:black">{{scripts.name}}</td>
+                              <td style="color:black">{{scripts.execTimeDiff}}</td>
+                              <td style="color:black">{{scripts.totalExecTimeDiff}}</td>
+                              <td style="color:black">{{scripts.execCountDiff}}</td>
+                              <td style="color:black">{{scripts.status}}</td>
+                            </tr>
+                          </ng-template>
+                        </p-table>
+                      </p-accordionTab>
+
+                    </p-accordion>
+
+
+
 
                     <br />
                     <!--p-treeTable [value]="files" ui-treetable-tablewrapper="red">
-    <p-column field="name" header="Name"></p-column>
-    <p-column field="size" header="Size"></p-column>
-    <p-column field="type" header="Type"></p-column>
-  </!--p-treeTable-->
-
+      <p-column field="name" header="Name"></p-column>
+      <p-column field="size" header="Size"></p-column>
+      <p-column field="type" header="Type"></p-column>
+    </!--p-treeTable-->
                   </p>
-                </div>
+</div>
               </div>
             </div>
           </div>
