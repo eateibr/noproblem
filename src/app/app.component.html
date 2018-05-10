@@ -201,32 +201,35 @@
                   <p>
                     <input type="file" id="fileInput" placeholder="Select file..." />
                     <button type="button" (click)="startUpload()">Load File</button>
-                    <br/><br /><br />
-                    
-                    <p-table [value]="profilerList" sortField="name" sortMode="single" (onSort)="onSort()">
+                    <br /><br /><br />
+
+                    <p-table [value]="profilerList[0].addedScripts.scripts">
                       <ng-template pTemplate="header">
                         <tr style="background-color:greenyellow;font-weight: 900;">
-                          <th style="font-weight: 900;">Name</th>
-                          <th style="font-weight: 900;">TimeImprovement</th>
                           <th style="font-weight: 900;">TotalTime</th>
-                          <th style="font-weight: 900;">TotalTime</th>
+                          <th style="font-weight: 900;">Status</th>
+                          <th style="font-weight: 900;">TotalExecTimeDiff</th>
+                          <th style="font-weight: 900;">ExecCountDiff</th>
                           <th style="font-weight: 900;">Status</th>
                         </tr>
                       </ng-template>
-                      <ng-template pTemplate="body" let-profiler>
+                      <ng-template pTemplate="body" let-scripts>
                         <tr style="background-color:whitesmoke">
-                          <td style="color:black" >{{profiler.name}}</td>
-                          <td style="color:black">{{profiler.timeImprovement}}</td>
-                          <td style="color:black">{{profiler.addedScripts.totalTime}}</td>
-                          <td style="color:black">{{profiler.addedScripts.scripts[0].name}}</td>
-                          <td style="color:black">{{profiler.addedScripts.scripts[0].status}}</td>
+                          <td style="color:black">{{scripts.name}}</td>
+                          <td style="color:black">{{scripts.execTimeDiff}}</td>
+                          <td style="color:black">{{scripts.totalExecTimeDiff}}</td>
+                          <td style="color:black">{{scripts.execCountDiff}}</td>
+                          <td style="color:black">{{scripts.status}}</td>
                         </tr>
                       </ng-template>
                     </p-table>
 
-</p>
+                  </p>
 
-                  <p class="m-b-0">
+                  <p>
+
+                    <br />
+
 
                     <br />
                     <!--p-treeTable [value]="files" ui-treetable-tablewrapper="red">
@@ -248,7 +251,7 @@
           <div class="col-lg-8">
             <div class="card">
               <div class="card-body">
-                <h4 class="card-title">Extra Area Chart</h4>
+                <h4 class="card-title">Status</h4>
                 <div id="extra-area-chart"></div>
               </div>
             </div>
@@ -258,7 +261,7 @@
           <div class="col-lg-4">
             <div class="card">
               <div class="card-body browser">
-                <!--
+      <!--          
   <p-chart type="doughnut" [data]="dougnut"></p-chart>
       -->
                 <!--
@@ -291,6 +294,7 @@
             </div>
           </div>
           <!-- column -->
+          <!--
         </div>
         <div class="row">
           <div class="col-lg-3">
@@ -375,7 +379,7 @@
           </div>
 
         </div>
-
+        -->
 
         <!-- End PAge Content -->
       </div>
