@@ -1,0 +1,56 @@
+{
+	"rootElements": [{
+		"name": "scriptName",
+		"timeImprovement": 55,
+		"addedScripts": {
+			"totalTime": 3,
+			"scripts": [{
+				"name": "cwt_do.ClsDataOrderHelperUI.saveBasket",
+				"execTimeDiff": 1526,
+				"totalExecTimeDiff": 1526,
+				"execCountDiff": 180,
+				"status": NEW,
+				"fullPath": "om.service.omapiJSBinding/createOrder.cwOnJsProvider > om.service.createOrderBindingScript > om.service.createOrder > 
+				}
+			]
+		},
+		"removedScripts": {
+			"totalTime": 3,
+			"scripts": [{
+				"name": "cwt_do.ClsDataOrderHelperUI.saveBasket",
+				"execTimeDiff": 1526,
+				"totalExecTimeDiff": 1526,
+				"execCountDiff": 180,
+				"status": REMOVED,
+				"fullPath": "om.service.omapiJSBinding/createOrder.cwOnJsProvider > om.service.createOrderBindingScript > om.service.createOrder > 
+				}
+			]
+		},
+		"existingScripts": {
+			"totalTime": 3,
+			"scripts": [{
+				"name": "cwt_do.ClsDataOrderHelperUI.saveBasket",
+				"execTimeDiff": 1526,
+				"totalExecTimeDiff": 1526,
+				"execCountDiff": 180,
+				"status": EXISTING,
+				"fullPath": "om.service.omapiJSBinding/createOrder.cwOnJsProvider > om.service.createOrderBindingScript > om.service.createOrder > 
+				}
+			]
+		},
+		"allScripts": {
+			"totalTime": 3,
+			"scripts": [{
+				"name": "cwt_do.ClsDataOrderHelperUI.saveBasket",
+				"execTimeDiff": 1526,
+				"totalExecTimeDiff": 1526,
+				"execCountDiff": 180,
+				"status": EXISTING,
+				"fullPath": "om.service.omapiJSBinding/createOrder.cwOnJsProvider > om.service.createOrderBindingScript > om.service.createOrder > 
+				}
+			]
+		}
+	},
+	"percentSlower":50,
+	"percentFaster":0]
+}
