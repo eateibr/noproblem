@@ -1,15 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\node_modules\\primeng\\resources",
-    "\\node_modules\\primeng\\resources\\themes",
-    "\\node_modules\\primeng\\resources\\themes\\omega",
     "\\src",
     "\\src\\app",
-    "\\src\\assets",
-    "\\src\\assets\\components\\themes\\omega",
-    "\\src\\assets\\showcase\\css"
+    "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\index.html",
+  "SelectedNode": "\\src\\app\\app.component.html",
   "PreviewInSolutionExplorer": false
 }

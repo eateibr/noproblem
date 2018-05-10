@@ -11,6 +11,9 @@ import { TableModule } from 'primeng/table';
 import { TreeTableModule } from 'primeng/treetable';
 import { TreeNode } from 'primeng/api';
 
+import {TabViewModule} from 'primeng/tabview';
+import {CarouselModule} from 'primeng/carousel';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
@@ -37,7 +40,9 @@ import { AppComponent } from './app.component';
     TreeTableModule,
     HttpModule,
     TableModule,
-    FileUploadModule
+    FileUploadModule,
+    TabViewModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

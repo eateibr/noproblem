@@ -7,7 +7,7 @@ import { FileUpload } from 'primeng/primeng';
 import { TableModule } from 'primeng/table';
 import { Profiler } from './profiler';
 import { DoughnutChartDemo } from './doughnutchartdemo';
-import {CarouselModule} from 'primeng/carousel';
+
 //import { Chart } from 'chart.js';
 
 @Component({
