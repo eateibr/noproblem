@@ -6,7 +6,8 @@ import { TreeNode } from 'primeng/api';
 import { FileUpload } from 'primeng/primeng';
 import { TableModule } from 'primeng/table';
 import { Profiler } from './profiler';
-//import { DoughnutChartDemo } from './doughnutchartdemo';
+import { DoughnutChartDemo } from './doughnutchartdemo';
+//import { Chart } from 'chart.js';
 
 @Component({
   selector: 'app-root',
@@ -18,12 +19,15 @@ export class AppComponent {
   @ViewChild('fileInput') fileInput: FileUpload;
 
   profilerList: Profiler[];
+  profilerList1: Profiler[];
   files: TreeNode[];
   http: Http;
-  //dougnut: DoughnutChartDemo;
+  dougnut: DoughnutChartDemo;
 
   constructor(private http1: Http) {
     this.http = http1;
+    //this.dougnut = new DoughnutChartDemo();
+    //console.log("dougnut:" + this.dougnut);
   }
 
 
@@ -35,6 +39,8 @@ export class AppComponent {
       .toPromise()
       .then(res => this.files = <TreeNode[]>res.json().data);
     console.log("FILES: " + this.files);*/
+
+    //this.loadTreeView('./assets/profiler.json');
   }
 
 
