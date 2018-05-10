@@ -881,10 +881,10 @@ a {
     background-color: #20272a;
     color: #ffffff;
     text-align: center;
-    padding: 30px;
+    padding: 300px;
 }
 
-.home .whouses h3 {
+.home .whouses h3 span {
     margin-bottom: 10px;
 }
 

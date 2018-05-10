@@ -2,17 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Perf</title>
+  <title>Profiler Diff GUI</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!--link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/themes/omega/theme.css" />
-  <link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/primeng.min.css" />
-  <script type="text/javascript" src="/node_modules/primeng/primeng.js"/-->
-  <!--link href="./css/lib/bootstrap/bootstrap.min.css" rel="stylesheet"-->
-  <!-- Custom CSS -->
+
   <link rel="stylesheet" type="text/css" href="assets/showcase/css/splash.css">
   <link id="theme-css" rel="stylesheet" type="text/css" href="assets/components/themes/omega/theme.scss">
 
@@ -25,10 +22,41 @@
   <link href="./assets/css/helper.css" rel="stylesheet">
   <link href="./assets/css/style.css" rel="stylesheet">
   <link href="./assets/datatable.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="ericsson.main.min.css">
 
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link rel="stylesheet" type="text/css" href="assets/showcase/css/splash.css">
+  <link rel="stylesheet" type="text/css" href="ericsson.main.min.css">
+  <link id="theme-css" rel="stylesheet" type="text/css" href="assets/components/themes/omega/theme.css">
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyA6Ar0UymhiklJBzEPLKKn2QHwbjdz3XV0" async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=explicit&onLoad=initRecaptcha" async defer></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-93461466-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/helper.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
+    <!--[if lt IE 9]>
+    <script src="https:**oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https:**oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->  
 </head>
 <body>
-  <app-root></app-root>
+    <app-root>
+        <div class="splash-screen">
+            <div class="splash-loader"></div>
+            <img class="splash-logo" src="assets/showcase/images/mask.svg">
+        </div>
+    </app-root>
+
 </body>
 </html>
