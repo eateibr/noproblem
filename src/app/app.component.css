@@ -1,27 +1,13 @@
-body {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    color: black;
+.long-time {
+    color:red !important;
 }
 
-
-
-td th {
-    border: 1px solid #ddd;
-    padding: 8px;
+.normal-td {
+    color: black !important;
 }
 
- tr:nth-child(even){background-color: #f2f2f2;
-    color: black;}
-
- tr:hover {background-color: #ddd;
-    color: black;}
-
- th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
+.div-panel {
+    background-color: blue !important;
+    width: 200px;
+    overflow-x: scroll;
 }

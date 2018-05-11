@@ -28,87 +28,113 @@
                     <button type="button" (click)="startUpload()">Load File</button>
                     <br /><br /><br />
 
-
-
                   <p>
 
                     <br />
 
-                    <p-carousel  [value]="profilerList" numVisible="1" easing="easeOutStrong" >
-                        <ng-template let-prof pTemplate="prof">
-                    {{prof.name}}
+             <p-tabView [ngClass]="div-panel">
+               <div *ngFor="let prof of profilerList" >
+               <p-tabPanel header="{{prof.name}}"  >
+
                     <p-accordion >
-                      <p-accordionTab *ngIf="prof.addedScripts ? true : false" header="Added Scripts {{prof.name}} - Time Difference: {{prof.timeImprovement}}">
-                        <p-table [value]="prof.addedScripts.scripts" [paginator]="true" [rows]="10" id="customers">
+
+                      <p-accordionTab *ngIf="prof.addedScripts ? true : false" header="Added Scripts <<{{prof.name}}>> - <<Time Difference: {{prof.timeDiff}}>>">
+                        <p-table [value]="prof.addedScripts.scripts" [paginator]="true" [rows]="10" >                     
+
+                            <ng-template pTemplate="caption">
+                              Added Scripts
+                                <div style="text-align: right">        
+                                    <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
+                                    <input type="text" pInputText size="50" placeholder="name" (input)="dt.filterGlobal($event.target.value, 'contains')" style="width:auto">
+                                </div>
+                            </ng-template>
+
+                          <ng-template pTemplate="header">
+                            <tr>
+                              <th align="center">Name</th>
+ <th align="center" [pSortableColumn]="execTimeDiff">execTimeDiff <p-sortIcon [field]="execTimeDiff"></p-sortIcon> </th>
+                              <th align="center">TotalExecTimeDiff</th>
+                              <th align="center">ExecCountDiff</th>
+
+                            </tr>
+                          </ng-template>
+                          <ng-template pTemplate="body" let-scripts>
+                            <tr>
+
+                              <td  >{{scripts.name}}</td>
+                              <td align="center" [ngClass]="scripts.execTimeDiff > 100 ? 'long-time' : 'normal-td'"   >{{scripts.execTimeDiff}}</td>
+                              <td align="center" >{{scripts.totalExecTimeDiff}}</td>
+                              <td align="center">{{scripts.execCountDiff}}</td>
+
+                            </tr>
+                          </ng-template>
+
+                          <ng-template pTemplate="summary">
+                              There are {{prof.addedScripts.scripts?.length}} records
+                          </ng-template>
+                        </p-table>
+                      </p-accordionTab>
+
+                      <p-accordionTab *ngIf="prof.removedScripts ? true : false" header="Removed Scripts <<{{prof.name}}>> - <<Time Difference: {{prof.timeDiff}}>>">
+                        <p-table [value]="prof.removedScripts.scripts" [paginator]="true" [rows]="10">
+                            <ng-template pTemplate="caption">
+                                Removed Scripts
+                            </ng-template>
                           <ng-template pTemplate="header">
                             <tr >
-                              <th >Name</th>
-                              <th align="right" [pSortableColumn]="execTimeDiff">execTimeDiff <p-sortIcon [field]="execTimeDiff"></p-sortIcon> </th>
-                              <th align="right" >TotalExecTimeDiff</th>
-                              <th align="right" >ExecCountDiff</th>
-                              <th align="right" >Status</th>
+                              <th align="center">Name</th>
+                              <th align="center">execTimeDiff</th>
+                              <th align="center">TotalExecTimeDiff</th>
+                              <th align="center">ExecCountDiff</th>
                             </tr>
                           </ng-template>
                           <ng-template pTemplate="body" let-scripts>
                             <tr>
                               <td >{{scripts.name}}</td>
-                              <td align="right" >{{scripts.execTimeDiff}}</td>
-                              <td align="right">{{scripts.totalExecTimeDiff}}</td>
-                              <td align="right">{{scripts.execCountDiff}}</td>
-                              <td align="right">{{scripts.status}}</td>
+                              <td align="center" [ngClass]="scripts.execTimeDiff > 100 ? 'long-time' : 'normal-td'">{{scripts.execTimeDiff}}</td>
+                              <td align="center" >{{scripts.totalExecTimeDiff}}</td>
+                              <td  align="center">{{scripts.execCountDiff}}</td>
                             </tr>
+                          </ng-template>
+                          <ng-template pTemplate="summary">
+                              There are {{prof.removedScripts.scripts?.length}} records
                           </ng-template>
                         </p-table>
                       </p-accordionTab>
 
-                      <p-accordionTab *ngIf="prof.removedScripts ? true : false" header="Removed Scripts {{prof.name}} - Time Difference: {{prof.timeImprovement}}">
-                        <p-table [value]="prof.removedScripts.scripts" [paginator]="true" [rows]="10">
+                      <p-accordionTab *ngIf="prof.existingScripts ? true : false" header="Existing Scripts <<{{prof.name}}>> - <<Time Difference: {{prof.timeDiff}}>>">
+                        <p-table [value]="prof.existingScripts.scripts"  [paginator]="true" [rows]="10">
+                            <ng-template pTemplate="caption">
+                                Existing Scripts
+                            </ng-template>
                           <ng-template pTemplate="header">
-                            <tr style="background-color:greenyellow;font-weight: 900;">
-                              <th style="font-weight: 900;">Name</th>
-                              <th align="right" style="font-weight: 900;">execTimeDiff</th>
-                              <th align="right" style="font-weight: 900;">TotalExecTimeDiff</th>
-                              <th align="right" style="font-weight: 900;">ExecCountDiff</th>
-                              <th align="right" style="font-weight: 900;">Status</th>
+                            <tr >
+                              <th align="center">Name</th>
+                              <th align="center">execTimeDiff</th>
+                              <th align="center">TotalExecTimeDiff</th>
+                              <th align="center">ExecCountDiff</th>
                             </tr>
                           </ng-template>
                           <ng-template pTemplate="body" let-scripts>
                             <tr>
-                              <td [ngClass]="'normal-td'">{{scripts.name}}</td>
-                              <td align="right" [ngClass]="scripts.execTimeDiff > 100 ? 'long-time' : 'normal-td'">{{scripts.execTimeDiff}}</td>
-                              <td align="right" [ngClass]="'normal-td'">{{scripts.totalExecTimeDiff}}</td>
-                              <td align="right" [ngClass]="'normal-td'">{{scripts.execCountDiff}}</td>
-                              <td align="right" [ngClass]="'normal-td'">{{scripts.status}}</td>
+                              <td >{{scripts.name}}</td>
+                              <td align="center" [ngClass]="scripts.execTimeDiff > 100 ? 'long-time' : 'normal-td'">{{scripts.execTimeDiff}}</td>
+                              <td  align="center">{{scripts.totalExecTimeDiff}}</td>
+                              <td align="center" >{{scripts.execCountDiff}}</td>
                             </tr>
+                          </ng-template>
+                          <ng-template pTemplate="summary">
+                              There are {{prof.existingScripts.scripts?.length}} records
                           </ng-template>
                         </p-table>
                       </p-accordionTab>
 
-                      <p-accordionTab *ngIf="prof.existingScripts ? true : false" header="Existing Scripts {{prof.name}} - Time Difference: {{prof.timeImprovement}}">
-                        <p-table [value]="prof.existingScripts.scripts"  [paginator]="true" [rows]="10">
-                          <ng-template pTemplate="header">
-                            <tr style="background-color:greenyellow;font-weight: 900;">
-                              <th style="font-weight: 900;">Name</th>
-                              <th align="right" style="font-weight: 900;">execTimeDiff</th>
-                              <th align="right" style="font-weight: 900;">TotalExecTimeDiff</th>
-                              <th align="right" style="font-weight: 900;">ExecCountDiff</th>
-                              <th align="right" style="font-weight: 900;">Status</th>
-                            </tr>
-                          </ng-template>
-                          <ng-template pTemplate="body" let-scripts>
-                            <tr style="background-color:whitesmoke">
-                              <td [ngClass]="'normal-td'">{{scripts.name}}</td>
-                              <td align="right" [ngClass]="scripts.execTimeDiff > 100 ? 'long-time' : 'normal-td'">{{scripts.execTimeDiff}}</td>
-                              <td align="right" [ngClass]="'normal-td'">{{scripts.totalExecTimeDiff}}</td>
-                              <td align="right" [ngClass]="'normal-td'">{{scripts.execCountDiff}}</td>
-                              <td align="right" [ngClass]="'normal-td'">{{scripts.status}}</td>
-                            </tr>
-                          </ng-template>
-                        </p-table>
-                      </p-accordionTab>
+                      <p-chart type="doughnut" [data]="dougnut1?.data" style="size:20%;" ></p-chart> 
+                      
                     </p-accordion>
-                  </ng-template>
-                  </p-carousel>
+                  </p-tabPanel>
+                </div>
+                </p-tabView>
                     <br />
                   </p>
                 </div>

@@ -28,6 +28,7 @@ import { FileUploadModule } from 'primeng/fileupload';
 import {PaginatorModule} from 'primeng/paginator';
 
 import { AppComponent } from './app.component';
+import {ChartModule} from 'primeng/primeng';
 
 @NgModule({
   declarations: [AppComponent],
@@ -45,7 +46,8 @@ import { AppComponent } from './app.component';
     FileUploadModule,
     TabViewModule,
     CarouselModule,
-    PaginatorModule  
+    PaginatorModule,
+    ChartModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

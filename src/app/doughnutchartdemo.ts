@@ -4,7 +4,7 @@ export class DoughnutChartDemo {
 
   constructor() {
     this.data = {
-      labels: ['A', 'B', 'C'],
+      labels: ['Added', 'Removed', 'Existing'],
       datasets: [
         {
           data: [300, 50, 100],
