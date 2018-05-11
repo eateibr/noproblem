@@ -42,12 +42,12 @@
                   <p>
                      
                     <br />
-
+                    <p-panel header="Root Level Scripts">
              <p-tabView [ngClass]="div-panel">
                <div *ngFor="let prof of profilerList" >
-               <p-tabPanel header="{{prof.name.substring(prof.name.lastIndexOf('/')+1)}}"  >
+               <p-tabPanel header="{{prof.name.substring(prof.name.lastIndexOf('/')+1)}}" >
                   <br /> <br />
-                  <p-panel header="">
+                  <p-panel header="Time Difference Details">
                     <p-accordion >
 
                       <p-accordionTab *ngIf="prof.addedScripts ? true : false" header="Added Scripts - Time Difference: {{prof.addedScripts.totalTime}}">
@@ -142,12 +142,11 @@
 
                           <p-table [columns]="cols" [value]="prof.allScripts.scripts" [paginator]="true" [rows]="10" columnResizeMode="expand" resizableColumns="true" autoLayout="true">
                               <ng-template pTemplate="caption">
-                                  All Scripts
-                                    <div style="text-align: right">        
-                                        <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
-                                        <input type="text" pInputText size="50" placeholder="name" (input)="dt.filterGlobal($event.target.value, 'contains')" style="width:auto">
-                                    </div>
-                                </ng-template>                            
+                                  <div style="text-align: right">        
+                                      <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
+                                      <input type="text" pInputText size="50" placeholder="Global Filter" (input)="dt.filterGlobal($event.target.value, 'contains')" style="width:auto">
+                                  </div>
+                              </ng-template>                       
                             
                               <ng-template pTemplate="header" let-columns>
                                   <tr>
@@ -167,12 +166,15 @@
                           </p-table>
 
                       </p-accordionTab>
-                      <p-chart type="doughnut" [data]="dougnut1?.data" style="size: 50px"></p-chart>
+                      <div style="height:300px; width:300px"> 
+                        <p-chart type="doughnut" [data]="dougnut1?.data" style="size: 50px"></p-chart>
+                      </div>
                     </p-accordion>
                   </p-panel>
                   </p-tabPanel>
                 </div>
                 </p-tabView>
+              </p-panel>                
                     <br />
                   </p>
                 </div>

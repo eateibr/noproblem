@@ -8,7 +8,7 @@ import { TableModule } from 'primeng/table';
 import { Profiler } from './profiler';
 import { DoughnutChartDemo } from './doughnutchartdemo';
 import { SortEvent } from 'primeng/api';
-
+import {PanelModule} from 'primeng/panel';
 
 //import { Chart } from 'chart.js';
 
@@ -21,6 +21,7 @@ export class AppComponent {
   title = 'app';
   @ViewChild('fileInput') fileInput: FileUpload;
 
+  profilerListFull: Profiler[];
   profilerList: Profiler[];
 
   //files: TreeNode[];
@@ -58,7 +59,23 @@ export class AppComponent {
   loadTreeView(fileName) {
     this.http.get(fileName)
       .toPromise()
-      .then(res => this.profilerList = <Profiler[]>res.json().rootElements);
+      .then(res => {
+        this.profilerListFull = <Profiler[]>res.json().rootElements;
+        console.log("this.profilerListFull:" + this.profilerListFull);
+        this.profilerList = [];
+        this.profilerListFull.forEach(element => {
+          console.log("element.allScripts.scripts.length" + element.allScripts.scripts.length); 
+          if (element.allScripts.scripts.length>0)
+          {
+            this.profilerList.push(element);
+          }
+          console.log("this.profilerList:" + this.profilerList); 
+        });
+      console.log("this.profilerList:" + this.profilerList);  
+      }      
+    
+    );
+
       /*console.log("this.profilerList:" + this.profilerList);
       var len = this.profilerList.length;
       console.log("len:::"+len);
