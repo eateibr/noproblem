@@ -2,11 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AccordionModule } from 'primeng/components/accordion/accordion';
-import { PanelModule } from 'primeng/components/panel/panel';
+//import { PanelModule } from 'primeng/components/panel/panel';
 import { ButtonModule } from 'primeng/components/button/button';
 import { RadioButtonModule } from 'primeng/components/radioButton/radioButton';
 import { DataGridModule } from 'primeng/datagrid';
 import { TableModule } from 'primeng/table';
+import {PanelModule} from 'primeng/panel';
 
 import { TreeTableModule } from 'primeng/treetable';
 import { TreeNode } from 'primeng/api';
@@ -24,6 +25,7 @@ import { HttpModule } from "@angular/http";
 //import { FileUploadModule } from 'primeng/components/fileupload/fileupload';
 import { FileUploadModule } from 'primeng/fileupload';
 //import { Router } from '@angular/router';
+import {PaginatorModule} from 'primeng/paginator';
 
 import { AppComponent } from './app.component';
 
@@ -42,7 +44,8 @@ import { AppComponent } from './app.component';
     TableModule,
     FileUploadModule,
     TabViewModule,
-    CarouselModule
+    CarouselModule,
+    PaginatorModule  
   ],
   providers: [],
   bootstrap: [AppComponent]
