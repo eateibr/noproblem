@@ -47,11 +47,11 @@
                <div *ngFor="let prof of profilerList" >
                <p-tabPanel header="{{prof.name.substring(prof.name.lastIndexOf('/')+1)}}"  (click)="tabClick()" *ngIf="prof.addedScripts || prof.removedScripts || prof.existingScripts? true : false">
                   <br /> <br />
-                  <p-panel header="Time Difference Details">
 
+                  <p-panel header="Performance: {{prof.timeDiff<0?(-1*prof.timeDiff) + ' milliseconds improvement':prof.timeDiff + ' milliseconds degradation'}}">
                     <p-accordion >
 
-                      <p-accordionTab *ngIf="prof.addedScripts ? true : false" header="Added Scripts - Time Difference: {{prof.addedScripts.totalTime}}">
+                      <p-accordionTab *ngIf="prof.addedScripts ? true : false" header="Added Scripts - Time Difference: {{prof.addedScripts.totalTime}} milliseconds">
 
                           <p-table [columns]="cols" [value]="prof.addedScripts.scripts" [paginator]="true" [rows]="10" columnResizeMode="expand" resizableColumns="true" autoLayout="true">
                               <ng-template pTemplate="caption">
@@ -80,7 +80,7 @@
                         
                       </p-accordionTab>
 
-                      <p-accordionTab *ngIf="prof.removedScripts ? true : false" header="Removed Scripts - Time Difference: {{prof.removedScripts.totalTime}}">
+                      <p-accordionTab *ngIf="prof.removedScripts ? true : false" header="Removed Scripts - Time Difference: {{prof.removedScripts.totalTime}} milliseconds">
 
                           <p-table [columns]="cols" [value]="prof.removedScripts.scripts" [paginator]="true" [rows]="10" columnResizeMode="expand" resizableColumns="true" autoLayout="true">
                               <ng-template pTemplate="caption">
@@ -109,7 +109,7 @@
 
                       </p-accordionTab>
 
-                      <p-accordionTab *ngIf="prof.existingScripts ? true : false" header="Existing Scripts - Time Difference: {{prof.existingScripts.totalTime}}">
+                      <p-accordionTab *ngIf="prof.existingScripts ? true : false" header="Existing Scripts - Time Difference: {{prof.existingScripts.totalTime}} milliseconds">
 
                           <p-table [columns]="cols" [value]="prof.existingScripts.scripts" [paginator]="true" [rows]="10" columnResizeMode="expand" resizableColumns="true" autoLayout="true">
                               <ng-template pTemplate="caption">
@@ -139,8 +139,7 @@
 
                       </p-accordionTab>
 
-
-                      <p-accordionTab *ngIf="prof.allScripts ? true : false" header="All Scripts - Time Difference: {{prof.timeDiff}}">
+                      <p-accordionTab *ngIf="prof.allScripts ? true : false" header="All Scripts">
 
                           <p-table [columns]="cols" [value]="prof.allScripts.scripts" [paginator]="true" [rows]="10" columnResizeMode="expand" resizableColumns="true" autoLayout="true">
                               <ng-template pTemplate="caption">

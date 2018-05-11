@@ -1,9 +1,9 @@
 {
 	"rootElements": [{
 			"name": "on.service.onapiJSBinding/createShoppingCart.cwOnJsProvider",
-			"timeDiff": -7308,
+			"timeDiff": 1000,
 			"addedScripts": {
-				"totalTime": 591,
+				"totalTime": 100,
 				"scripts": [{
 						"name": "cwt_do.doConfig.getLogicalItemTypes",
 						"execTimeDiff": 0,
@@ -22,7 +22,7 @@
 				]
 			},
 			"removedScripts": {
-				"totalTime": 894,
+				"totalTime": 200,
 				"scripts": [{
 						"name": "cwt_do.api.orderClassUI.mapBasketItemDoc2OrderItem",
 						"execTimeDiff": 158,
@@ -34,7 +34,7 @@
 				]
 			},
 			"existingScripts": {
-				"totalTime": 59292,
+				"totalTime": 900,
 				"scripts": [{
 						"name": "cwt_do.api.orderClassUI.addProductOfferingToOrder",
 						"execTimeDiff": 2904,
