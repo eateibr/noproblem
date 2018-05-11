@@ -137,9 +137,9 @@ export class AppComponent {
      
         let file: File = fileList[0];
         let formData:FormData = new FormData();
-        formData.append('uploadFile', file, file.name);
+        formData.append('file1', file, file.name);
          file = fileList[1];
-        formData.append('uploadFile', file, file.name);
+        formData.append('file2', file, file.name);
         
         let headers = new Headers();
         
@@ -152,7 +152,7 @@ export class AppComponent {
         .map(res => this.profilerList = <Profiler[]>res.json().rootElements)
         .subscribe(
           //data => console.log(data));
-         // res => console.log(res);
+          res => console.log(res);
         )
     }
   }     
