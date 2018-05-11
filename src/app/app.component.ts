@@ -95,12 +95,22 @@ export class AppComponent {
     //this.fileInput.upload();
     var fileInput = document.getElementById('fileInput');
     if (fileInput && fileInput['files']) {
-      var fileName = fileInput['files'].item(0).name;
-      this.loadTreeView('./assets/' + fileName);
-    }
+      if(fileInput['files'].item(0)) {
+         var fileName = fileInput['files'].item(0).name;
+         this.loadTreeView('./assets/' + fileName);
+         console.log("profilerList:::" + this.profilerList)
+         //this.getDoughnut();
+      } else {
+         alert("Please select a file, first!");
+      }
+    } 
   }
 
-  getDoughnut(){
+  tabClick() {
+       alert("tabClick");
+ }
+
+  getDoughnut() {
     //console.log("prof : "+prof);
     var addedScrLen = 50; // (prof.addedScripts ?  prof.addedScripts.scripts.length:0);
     var removedScrLen = 100; // (prof.removedScripts ?  prof.removedScripts.scripts.length:0);
@@ -108,7 +118,10 @@ export class AppComponent {
     console.log("getDougnutData : "+addedScrLen );
     //this.dougnut = {labels: ['Added', 'Removed', 'Existing'],datasets: [{data: [addedScrLen, removedScrLen, existingScrLen]}]};
     this.dougnut = new DoughnutChartDemo();
-    //this.dougnut.datasets.data[0]=99;
+    console.log("=>this.dougnut: "+this.dougnut);
+    this.dougnut.data.datasets[0].data[0]=addedScrLen;
+    this.dougnut.data.datasets[0].data[1]=removedScrLen;
+    this.dougnut.data.datasets[0].data[2]=existingScrLen;
   }
 
   customSort(event: SortEvent) {

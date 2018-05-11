@@ -2,7 +2,7 @@
   <!-- Main wrapper  -->
   <div id="main-wrapper">
     
-    <!-- Page wrapper  --
+    <!-- Page wrapper
     <div class="page-wrapper"> -->
       <!-- Bread crumb -->
       <div class="row page-titles">
@@ -45,9 +45,10 @@
                     <p-panel header="Root Level Scripts">
              <p-tabView [ngClass]="div-panel">
                <div *ngFor="let prof of profilerList" >
-               <p-tabPanel header="{{prof.name.substring(prof.name.lastIndexOf('/')+1)}}" >
+               <p-tabPanel header="{{prof.name.substring(prof.name.lastIndexOf('/')+1)}}"  (click)="tabClick()" *ngIf="prof.addedScripts || prof.removedScripts || prof.existingScripts? true : false">
                   <br /> <br />
                   <p-panel header="Time Difference Details">
+
                     <p-accordion >
 
                       <p-accordionTab *ngIf="prof.addedScripts ? true : false" header="Added Scripts - Time Difference: {{prof.addedScripts.totalTime}}">
@@ -137,6 +138,7 @@
                           </p-table>
 
                       </p-accordionTab>
+
 
                       <p-accordionTab *ngIf="prof.allScripts ? true : false" header="All Scripts - Time Difference: {{prof.timeDiff}}">
 
