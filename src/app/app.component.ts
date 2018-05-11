@@ -7,6 +7,8 @@ import { FileUpload } from 'primeng/primeng';
 import { TableModule } from 'primeng/table';
 import { Profiler } from './profiler';
 import { DoughnutChartDemo } from './doughnutchartdemo';
+import { SortEvent } from 'primeng/api';
+
 
 //import { Chart } from 'chart.js';
 
@@ -26,6 +28,8 @@ export class AppComponent {
   dougnut1: DoughnutChartDemo;
   dougnut: any;
 
+  cols: any[];
+
   constructor(private http1: Http) {
     this.http = http1;
 
@@ -34,9 +38,22 @@ export class AppComponent {
     //console.log("============>"+this.aa);
     //this.dougnut = new DoughnutChartDemo();
     console.log("dougnut:" + this.dougnut1.data.labels.length);
-
+  
   }
 
+  ngOnInit() {
+    console.log("Rodolfo - ngOnInit: begin"); 
+
+    this.cols = [
+      { field: 'name', header: 'Name' },
+      { field: 'execTimeDiff', header: 'Execution Time Difference' },
+      { field: 'totalExecTimeDiff', header: 'Total Execution Time Difference' },
+      { field: 'execCountDiff', header: 'Execution Count Difference' },
+    ];
+    console.log("Rodolfo - ngOnInit: end");
+    console.log("Rodolfo - Colunas: "+this.cols);
+    
+}  
 
   loadTreeView(fileName) {
     this.http.get(fileName)
@@ -76,5 +93,26 @@ export class AppComponent {
     this.dougnut = new DoughnutChartDemo();
     //this.dougnut.datasets.data[0]=99;
   }
+
+  customSort(event: SortEvent) {
+    event.data.sort((data1, data2) => {
+        let value1 = data1[event.field];
+        let value2 = data2[event.field];
+        let result = null;
+
+        if (value1 == null && value2 != null)
+            result = -1;
+        else if (value1 != null && value2 == null)
+            result = 1;
+        else if (value1 == null && value2 == null)
+            result = 0;
+        else if (typeof value1 === 'string' && typeof value2 === 'string')
+            result = value1.localeCompare(value2);
+        else
+            result = (value1 < value2) ? -1 : (value1 > value2) ? 1 : 0;
+
+        return (event.order * result);
+    });
+}
 
 }
