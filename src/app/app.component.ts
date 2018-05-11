@@ -9,6 +9,10 @@ import { Profiler } from './profiler';
 import { DoughnutChartDemo } from './doughnutchartdemo';
 import { SortEvent } from 'primeng/api';
 import {PanelModule} from 'primeng/panel';
+import { Headers } from '@angular/http';
+import { HttpHeaders } from '@angular/common/http';
+import {RequestOptions, Request, RequestMethod} from '@angular/http';
+import 'rxjs/add/operator/map'; 
 
 //import { Chart } from 'chart.js';
 
@@ -91,20 +95,20 @@ export class AppComponent {
   }
 
 
-  startUpload() {
-    //this.fileInput.upload();
-    var fileInput = document.getElementById('fileInput');
-    if (fileInput && fileInput['files']) {
-      if(fileInput['files'].item(0)) {
-         var fileName = fileInput['files'].item(0).name;
-         this.loadTreeView('./assets/' + fileName);
-         console.log("profilerList:::" + this.profilerList)
-         //this.getDoughnut();
-      } else {
-         alert("Please select a file, first!");
-      }
-    } 
-  }
+  // startUpload() {
+  //   //this.fileInput.upload();
+  //   var fileInput = document.getElementById('fileInput');
+  //   if (fileInput && fileInput['files']) {
+  //     if(fileInput['files'].item(0)) {
+  //        var fileName = fileInput['files'].item(0).name;
+  //        this.loadTreeView('./assets/' + fileName);
+  //        console.log("profilerList:::" + this.profilerList)
+  //        //this.getDoughnut();
+  //     } else {
+  //        alert("Please select a file, first!");
+  //     }
+  //   } 
+  // }
 
   tabClick() {
        alert("tabClick");
@@ -123,6 +127,35 @@ export class AppComponent {
     this.dougnut.data.datasets[0].data[1]=removedScrLen;
     this.dougnut.data.datasets[0].data[2]=existingScrLen;
   }
+
+  startUpload(event){
+    
+    
+    let fileList: FileList = event.target.files;
+
+    if(fileList.length > 1) {
+     
+        let file: File = fileList[0];
+        let formData:FormData = new FormData();
+        formData.append('uploadFile', file, file.name);
+         file = fileList[1];
+        formData.append('uploadFile', file, file.name);
+        
+        let headers = new Headers();
+        
+        /** In Angular 5, including the header Content-Type can invalidate your request */
+        headers.append('Content-Type', 'multipart/form-data');
+        headers.append('Accept', 'application/json');
+        let options = new RequestOptions({ headers: headers });
+        
+        this.http.post('http://localhost:8000/LogDiff', formData, options)
+        .map(res => this.profilerList = <Profiler[]>res.json().rootElements)
+        .subscribe(
+          //data => console.log(data));
+         // res => console.log(res);
+        )
+    }
+  }     
 
   customSort(event: SortEvent) {
     event.data.sort((data1, data2) => {
@@ -143,6 +176,7 @@ export class AppComponent {
 
         return (event.order * result);
     });
+
 }
 
 }

@@ -27,11 +27,11 @@
                     <p-card>
                         <br />
                         <label for="fileInput" class="custom-file-upload">
-                            <i class="fa fa-cloud-upload"></i> Select File
+                            <i class="fa fa-cloud-upload"></i> Select Files
                         </label>
-                        <input id="fileInput" type="file" />                      
+                        <input id="fileInput" type="file" multiple (change)="startUpload($event)" />                      
 
-                    <button class="button"  type="button" (click)="startUpload()">Load File</button>
+                    <!--<button class="button"  type="button" >Load File</button>-->
                     <br />
 
                     
