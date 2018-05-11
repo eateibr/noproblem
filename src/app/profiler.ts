@@ -1,6 +1,6 @@
 export class Profiler {
   name;
-  timeImprovement;
+  timeDiff;
   addedScripts;
   removedScripts;
   existingScripts;
