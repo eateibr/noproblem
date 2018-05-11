@@ -52,7 +52,7 @@
 
                       <p-accordionTab *ngIf="prof.addedScripts ? true : false" header="Added Scripts - Time Difference: {{prof.addedScripts.totalTime}}">
 
-                          <p-table [columns]="cols" [value]="prof.addedScripts.scripts" [paginator]="true" [rows]="10">
+                          <p-table [columns]="cols" [value]="prof.addedScripts.scripts" [paginator]="true" [rows]="10" columnResizeMode="expand" resizableColumns="true" autoLayout="true">
                               <ng-template pTemplate="caption">
                                   Added Scripts
                                     <div style="text-align: right">        
@@ -81,7 +81,7 @@
 
                       <p-accordionTab *ngIf="prof.removedScripts ? true : false" header="Removed Scripts - Time Difference: {{prof.removedScripts.totalTime}}">
 
-                          <p-table [columns]="cols" [value]="prof.removedScripts.scripts" [paginator]="true" [rows]="10">
+                          <p-table [columns]="cols" [value]="prof.removedScripts.scripts" [paginator]="true" [rows]="10" columnResizeMode="expand" resizableColumns="true" autoLayout="true">
                               <ng-template pTemplate="caption">
                                   Removed Scripts
                                     <div style="text-align: right">        
@@ -110,7 +110,7 @@
 
                       <p-accordionTab *ngIf="prof.existingScripts ? true : false" header="Existing Scripts - Time Difference: {{prof.existingScripts.totalTime}}">
 
-                          <p-table [columns]="cols" [value]="prof.existingScripts.scripts" [paginator]="true" [rows]="10">
+                          <p-table [columns]="cols" [value]="prof.existingScripts.scripts" [paginator]="true" [rows]="10" columnResizeMode="expand" resizableColumns="true" autoLayout="true">
                               <ng-template pTemplate="caption">
                                   Existing Scripts
                                     <div style="text-align: right">        
@@ -140,7 +140,7 @@
 
                       <p-accordionTab *ngIf="prof.allScripts ? true : false" header="All Scripts - Time Difference: {{prof.timeDiff}}">
 
-                          <p-table [columns]="cols" [value]="prof.allScripts.scripts" [paginator]="true" [rows]="10">
+                          <p-table [columns]="cols" [value]="prof.allScripts.scripts" [paginator]="true" [rows]="10" columnResizeMode="expand" resizableColumns="true" autoLayout="true">
                               <ng-template pTemplate="caption">
                                   All Scripts
                                     <div style="text-align: right">        
@@ -167,7 +167,7 @@
                           </p-table>
 
                       </p-accordionTab>
-                      <p-chart type="doughnut" [data]="dougnut1?.data" ></p-chart>
+                      <p-chart type="doughnut" [data]="dougnut1?.data" style="size: 50px"></p-chart>
                     </p-accordion>
                   </p-panel>
                   </p-tabPanel>
