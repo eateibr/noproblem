@@ -56,6 +56,10 @@
                         <img src="assets/images/donts_black.svg" style="height: 50px"/>
                       </div>
                       <p-accordion >
+                      
+                      <div style="height:70%; width:70%;padding-left: 300px; padding-bottom: 50px">
+                          <p-chart type="doughnut" [data]="dougnut1?.data"  ></p-chart>
+                      </div>
 
                       <p-accordionTab *ngIf="prof.addedScripts ? true : false" header="Added Scripts - Time Difference: {{prof.addedScripts.totalTime}} milliseconds">
 
@@ -173,9 +177,7 @@
                           </p-table>
 
                       </p-accordionTab>
-                      <div style="height:300px; width:300px"> 
-                        <p-chart type="doughnut" [data]="dougnut1?.data" style="size: 50px"></p-chart>
-                      </div>
+                     
                     </p-accordion>
                   </p-panel>
                   </p-tabPanel>
