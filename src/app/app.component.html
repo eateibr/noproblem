@@ -24,18 +24,30 @@
                 <li class="media-body media-text-middle">
 
                   <p>
-                    <input type="file" id="fileInput" placeholder="Select file..." />
-                    <button type="button" (click)="startUpload()">Load File</button>
-                    <br /><br /><br />
+                    <p-card>
+                        <br />
+                        <label for="fileInput" class="custom-file-upload">
+                            <i class="fa fa-cloud-upload"></i> Select File
+                        </label>
+                        <input id="fileInput" type="file" />                      
+
+                    <button class="button"  type="button" (click)="startUpload()">Load File</button>
+                    <br />
+
+                    
+
+                    </p-card>
+                    <br />
 
                   <p>
-
+                     
                     <br />
 
              <p-tabView [ngClass]="div-panel">
                <div *ngFor="let prof of profilerList" >
                <p-tabPanel header="{{prof.name}}"  >
-
+                  <br /> <br />
+                  <p-panel header="">
                     <p-accordion >
 
                       <p-accordionTab *ngIf="prof.addedScripts ? true : false" header="Added Scripts <<{{prof.name}}>> - <<Time Difference: {{prof.timeDiff}}>>">
@@ -93,7 +105,7 @@
                               <td >{{scripts.name}}</td>
                               <td align="center" [ngClass]="scripts.execTimeDiff > 100 ? 'long-time' : 'normal-td'">{{scripts.execTimeDiff}}</td>
                               <td align="center" >{{scripts.totalExecTimeDiff}}</td>
-                              <td  align="center">{{scripts.execCountDiff}}</td>
+                              <td align="center">{{scripts.execCountDiff}}</td>
                             </tr>
                           </ng-template>
                           <ng-template pTemplate="summary">
@@ -128,10 +140,9 @@
                           </ng-template>
                         </p-table>
                       </p-accordionTab>
-
-                      <p-chart type="doughnut" [data]="dougnut1?.data" style="size:20%;" ></p-chart> 
-                      
+                      <p-chart type="doughnut" [data]="dougnut1?.data" ></p-chart>
                     </p-accordion>
+                  </p-panel>
                   </p-tabPanel>
                 </div>
                 </p-tabView>

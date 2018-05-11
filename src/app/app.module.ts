@@ -29,6 +29,7 @@ import {PaginatorModule} from 'primeng/paginator';
 
 import { AppComponent } from './app.component';
 import {ChartModule} from 'primeng/primeng';
+import {CardModule} from 'primeng/card';
 
 @NgModule({
   declarations: [AppComponent],
@@ -47,7 +48,8 @@ import {ChartModule} from 'primeng/primeng';
     TabViewModule,
     CarouselModule,
     PaginatorModule,
-    ChartModule 
+    ChartModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
