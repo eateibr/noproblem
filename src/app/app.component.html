@@ -42,14 +42,20 @@
                   <p>
                      
                     <br />
-                    <p-panel header="Root Level Scripts">
+                    <p-panel header="Root Level Scripts" *ngIf="profilerList ? true : false">
              <p-tabView [ngClass]="div-panel">
                <div *ngFor="let prof of profilerList" >
-               <p-tabPanel header="{{prof.name.substring(prof.name.lastIndexOf('/')+1)}}"  (click)="tabClick()" *ngIf="prof.addedScripts || prof.removedScripts || prof.existingScripts? true : false">
+               <p-tabPanel header="{{prof.name.substring(prof.name.lastIndexOf('/')+1)}}"  *ngIf="prof.addedScripts || prof.removedScripts || prof.existingScripts? true : false">
                   <br /> <br />
 
                   <p-panel header="Performance: {{prof.timeDiff<0?(-1*prof.timeDiff) + ' milliseconds improvement':prof.timeDiff + ' milliseconds degradation'}}">
-                    <p-accordion >
+                    <div *ngIf="prof.timeDiff<=0" style="align-items: center">
+                      <img src="assets/images/dos_bestpractice_black.svg" style="height: 50px"/>
+                    </div>
+                    <div *ngIf="prof.timeDiff>0" style="align-items: center">
+                        <img src="assets/images/donts_black.svg" style="height: 50px"/>
+                      </div>
+                      <p-accordion >
 
                       <p-accordionTab *ngIf="prof.addedScripts ? true : false" header="Added Scripts - Time Difference: {{prof.addedScripts.totalTime}} milliseconds">
 
