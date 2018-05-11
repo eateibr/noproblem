@@ -1,0 +1,1048 @@
+
+
+ ********* 2018-05-06 18:50:41 Duration: 00:00:15 *********
+---------- SCRIPT CALLS ----------
+     TOTAL     AVERAGE     LONGEST    SHORTEST      COUNT  ELEMENT
+  millisec    microsec    microsec    microsec
+     9,576   9,576,562   9,576,562   9,576,562          1  on.service.onapiJSBinding/createShoppingCart.cwOnJsProvider
+     9,568   9,568,983   9,568,983   9,568,983          1  on.service.createShoppingCart
+     9,568   9,568,936   9,568,936   9,568,936          1  cwl_on.createShoppingCart
+     8,222      54,455     124,441      27,614        151  dataorder.service.addOrderItem
+     8,219      54,433     124,420      27,590        151  cwt_do.api.addOrderItemHandler
+     8,214      54,397     124,387      27,548        151  cwt_do.api.orderClassUI.addOrderItem
+     4,343      28,764      62,932          11        151  cwt_do.api.orderClassUI.createItemRelations
+     4,260      27,667      61,887         667        154  cwt_do.ClsDataOrderHelperUI.saveBasket
+     2,529      16,320      75,964           6        155  cwt_do.ClsDataOrderHelperUI.priceBasket
+     1,218       1,316      47,751         473        926  cwt_do.api.orderClassUI.mapBasketItemDoc2OrderItem
+       940     235,229     925,604         651          4  cwt_do.api.orderClassUI.toOrder
+       937     234,480     924,793          62          4  cwt_do.api.orderClassUI.getOrderItems
+       791       5,243      24,408       3,755        151  cwt_do.api.orderClassUI.addProductOfferingToOrder
+       757       5,016      24,191       3,584        151  cwt_do.api.orderClassUI.addPOtoOrder
+       742       4,913      23,931       3,510        151  cwt_do.ClsDataOrderHelperUI.addItem
+       702       4,654      22,388       3,295        151  cwt_do.ClsDataOrderHelperUI.addBasketItem
+       649         701      45,902         136        926  cwt_do.api.orderClassUI.findBasketItemCharacteristics
+       328         141       1,256          44      2,324  cwt_do.ClsDataOrderHelperUI.addRelation
+       284     284,410     284,410     284,410          1  security.loginJava
+       284     284,392     284,392     284,392          1  security.login
+       187         621       7,537          93        302  cwt_do.api.orderClassUI.findBasketItemCharges
+       167          38         357          21      4,348  eoc_commons.getBaseCatalogItemType
+       162     162,411     162,411     162,411          1  security.getUserProfile
+       160     160,875     160,875     160,875          1  security.getUserProfileByKey
+       146     146,306     146,306     146,306          1  cwl_on.populateONItemsFromDataOrder
+       141      70,780     132,579       8,982          2  cwt_do.new_cwt_do.dataOrder.getHelper
+       141      70,773     132,570       8,976          2  cwt_do.getDOHelper
+       140      70,394     132,202       8,586          2  cwt_do.ClsDataOrderHelperUI.initial
+       129      32,488      55,570       5,732          4  cwt_do.ClsDataOrderHelperUI.save
+       125         419       1,153          76        300  cwt_do.refreshPOAfterCreateOIRelation
+       125      41,725      55,939      22,031          3  cwt_do.api.orderClassUI.save
+       121     121,067     121,067     121,067          1  cwl_security.login
+       112         136       1,998          11        828  cwt_do.copyChargeAttributes
+       110         142         735          85        775  cwt_do.setInitialState
+       106      53,348     104,832       1,864          2  cwt_do.getBasketById
+       101          50         197          31      2,023  cwt_do.ClsDataOrderHelperUI.isItemLogicalOffer
+        97          48         195          30      2,023  cwt_do.ClsDataOrderHelperUI.isItemLogicalType
+        96      48,170      94,630       1,711          2  cwt_do.readBasketByIdFromCache
+        93         101         297          59        926  cwt_do.api.orderClassUI.findBasketItemRelations
+        72          10         105           5      6,650  cwt_do.fixItemRelationId
+        46          60         611          32        775  cwt_do.getInitialState
+        43          69         662          51        624  cwt_do.addIncludeRelation
+        42          16         571           9      2,628  cwt_do.getClsCatalogTypes
+        39          50         175          19        775  cwt_do.getOwnertPO
+        39          36         123          25      1,076  cwt_do.ClsDataOrderHelperUI.getTargetRelationsForItem
+        29           0          19           0    121,978  security.data.privilege.cwGetStructId
+        24           5          69           2      4,650  eoc_commons.Constants
+        24       4,016      11,355         721          6  api_common.publish
+        23         155       2,408         103        153  cwt_do.getCatalogHelper
+        22       5,724      21,053          63          4  cwt_do.new_cwt_do.dataOrder.saveOrder
+        21       4,319      11,744       1,294          5  api_common.executeGet
+        21          22         168          19        926  cwt_do.ClsDataOrderHelperUI.getSourceRelationsForItem
+        19           6         115           0      3,008  eoc_commons.checkBaseCatalogItemType
+        19         125       2,380          44        155  cwt_do.getClsInterface
+        17          21          69          14        828  cwt_do.api.orderClassUI.setNameAndDescription
+        17       5,689      11,755       1,561          3  security.getGroupPrivilegesByKey
+        16          17         181          12        926  cwt_do.api.orderClassUI.findRelatedObjectsBySource
+        16       5,533       9,901       1,349          3  cwl_om.scheduledOrderProcess.start.evaluate.cwOnProcActBefore
+        16         107         386          84        151  dataorder.service.afterAddOrderItem
+        16       5,341      11,314       1,292          3  cwl_security.getGroupPrivilegesByKey
+        15       5,328      11,303       1,279          3  cwl_security.getGroupPrivileges
+        14       4,705       7,487       1,311          3  cwl_om.processScheduledOrder
+        13       6,987      13,902          71          2  cwt_do.ClsDataOrderHelperUI.loadItems
+        13       6,925      13,814          37          2  cwt_do.ClsDataOrderHelperUI.remapGUIDs
+        13          88         362          68        151  cwl_fullStack.afterAddItemHandler
+        12      12,848      12,848      12,848          1  cwt_do.ClsDataOrderHelperUI.recalculateCalculatedValuesInBasket
+        11          14          44           8        775  cwt_do.doCatalogTypeConfig.isProduct
+        10           7         185           2      1,376  cwt_do.ClsDataOrderHelperUI.getObjectById
+        10       5,142      10,163         120          2  cwt_do.cloneBasket
+        10      10,245      10,245      10,245          1  cwt_do.createOrderClassInstance
+         9          65         173          50        151  cwt_do.api.orderClassUI.setPOOINotes
+         9       9,906       9,906       9,906          1  cwt_do.api.orderClassUI.init
+         9           7          26           4      1,247  cwt_do.doCatalogTypeConfig.isService
+         8           9          56           2        926  cwt_do.api.orderClassUI.mapPOOIDocNotesToOrderItem
+         8       8,363       8,363       8,363          1  cwt_do.getOrderById
+         7       7,710       7,710       7,710          1  dataorder.service.createOrder
+         7       7,689       7,689       7,689          1  cwt_do.api.createOrderHandler
+         7          49         150          35        150  cwt_do.api.orderClassUI.existsTargetRelation
+         7          24         103           3        302  cwt_do.api.orderClassUI.getAccountId
+         7       7,257       7,257       7,257          1  on.service.validateRequestElements
+         7          46          77          38        151  dataorder.service.beforeAddOrderItem
+         6           4          35           3      1,558  performanceUtils.getObject
+         5           2         121           1      2,153  cwt_do.getEocRelationsHandling
+         5       1,149       1,662         986          5  cwl_dbqueue.queueListenerThread
+         5          18         249           2        302  cwt_do.api.orderClassUI.getSiteId
+         5           2          13           1      2,023  cwt_do.getLogicalItemType
+         5       5,455       5,455       5,455          1  cwt_do.cloneOrder
+         5           6          17           4        828  cwt_do.api.orderClassUI.setExternalIDs
+         5          35         381          25        151  eoc_commons.validateProductOfferingItem
+         5          34          65          29        151  cwt_do.api.beforeAddItemHandler
+         5           2          22           0      2,175  cwt_dict.isOneOf
+         5       5,143       5,143       5,143          1  cwt_do.api.orderClassUI.loadItemsFromServiceRegistry
+         5       5,117       5,117       5,117          1  cwt_on_cim_ext.getExistingAccountServices
+         5           6          62           5        776  performanceUtils.putObject
+         4          32         159          24        151  cwl_on.mapOnExtendedOrderItem2DoOrderItem.action-770072745.cwOnItemConversion
+         4           2          43           0      2,138  eoc_commons.isFault
+         4           6          24           3        775  cwt_do.doCatalogTypeConfig.getProductTypes
+         4          31          68          16        151  cwl_on.getRelatedItemsFromItem
+         4       4,677       4,677       4,677          1  cwt_sr.getProductHelper
+         4       4,633       4,633       4,633          1  cwtsr_Lib.getProduct
+         4          30         230          20        150  checkCommunityPO/$g/1368158400
+         4       4,480       4,480       4,480          1  cwtsr_Lib.productsFinder.cwOnFinderSel
+         4          29         209          22        152  cwl_on.getRelatedObjectsFromItem
+         4         849         879         816          5  cwl_dbqueue.getNextMessage
+         4           3          17           1      1,247  cwt_do.doCatalogTypeConfig.getServiceTypes
+         4          27          37          22        151  cwt_do.api.orderClassUI.validateAndSetProductCharacteristics
+         3          24          57          22        151  cwt_do.setTreeCharacteristics
+         3           3          10           2        926  cwt_do.api.mapBasketItemDoc2OrderItem.units--412012054.cwOnItemConversion
+         3           0          53           0     24,650  com.conceptwave.system.DataStructure.onInit
+         3       1,630       1,661       1,600          2  cwtsr_cacheLib.getProductsItemsBufferForCustomer
+         3       1,616       1,644       1,588          2  cwtsr_cacheLib.getFullProductsAssociationsByCustomerId
+         3          10         112           5        302  cwt_do.api.orderClassUI.getAccount
+         2       2,862       2,862       2,862          1  cwt_do.readOrderByIdFromCache
+         2          18         204          11        153  cwt_do.doCatalogTypeConfig.isResource
+         2       2,435       2,435       2,435          1  cwl_security.getUserByKey
+         2       2,427       2,427       2,427          1  cwl_security.getUserProfile
+         2          15         131          10        151  cwt_do.api.orderClassUI.persistOrderItemRelatedObjects
+         2           7         143           2        302  cwt_do.api.orderClassUI.getDefaultCustomerId
+         2          15         109          10        151  cwt_do.ClsDataOrderHelperUI.addParent2ChildIncludeRelation
+         2           7          78           4        302  cwt_do.api.orderClassUI.getSite
+         2           1          14           0      1,539  cwt_do.Constants
+         2          14         164          10        151  cwt_do.ClsDataOrderHelperUI.getObjectByGUID
+         2           1         123           0      2,023  cwt_do.ClsDataOrderHelperUI.getConfig
+         2          14         212           9        150  communityPO_isValid/$g/1368158400
+         2       2,178       2,178       2,178          1  cwl_on.updateReferenceRequestId
+         1           2           9           1        828  cwt_do.api.orderClassUI.setType
+         1       1,918       1,918       1,918          1  cwl_on.resourceValidationON
+         1          11          89           5        152  eoc_commons.getResourceURI
+         1           1           5           1        926  cwt_do.api.mapBasketItemDoc2OrderItem.amount--269981095.cwOnItemConversion
+         1         379         770         211          4  cwt_do.api.orderClassUI.addRelatedObject
+         1         172         483          37          8  cwt_do.new_cwt_do.dataOrder.cwOnOrdVisualKey
+         1           8          60           4        152  cwt_do.ClsDataOrderHelperUI.getBasketContext
+         1         166         477          29          8  cwt_do._getVisualKey
+         1           8          39           5        151  cwt_do.api.orderClassUI.updateProductPrice
+         1       1,310       1,310       1,310          1  security.getUserPreferenceByKey
+         1         313         358         263          4  cwt_do.api.orderClassUI.getRelatedObjects
+         1         243         645          32          5  api_common.putObjectInCache
+         1           7          51           4        151  cwt_do.api.orderClassUI.getRootProductOffering
+         1       1,123       1,123       1,123          1  cwl_security.getUserGroups
+         1           7          99           4        153  cwt_do.doCatalogTypeConfig.getResourceTypes
+         1           6          20           4        151  cwl_on.mapOnExtendedOrderItem2DoOrderItem.cwOnMapConv
+         1       1,010       1,010       1,010          1  api_common.getDocumentById
+         0          20          85          14         46  checkAddonPO/$g/1368158400
+         0           2          41           0        302  eoc_commons.forEach
+         0         867         867         867          1  cwtsr_cacheLib.updateOnDemand
+         0          50          74          34         16  cwt_do.api.orderClassUI.mapRelatedObjectDoc2Structure
+         0         683         683         683          1  cwl_security.getUserPreferenceByKey
+         0           2          19           0        302  cwt_do.ClsDataOrderHelperUI.getAccounts
+         0         315         341         288          2  cwt_do.ClsDataOrderHelperUI.onInit
+         0         301         330         272          2  cwt_do.ClsDataOrderHelperUI.initGlobalVariables
+         0           0           9           0        775  cwt_do.isPerItemUnderPOOI
+         0           1          18           0        302  cwt_do.ClsDataOrderHelperUI.getSites
+         0         263         512          15          2  cwt_do.orderInstance.cwOnDocStore
+         0         424         424         424          1  cwl_on.mapDataOrder2ONResponse
+         0         405         405         405          1  cwl_on.mapDO2ONResponseHandler
+         0         290         290         290          1  security.data.userProfile.computeVisualKey
+         0         285         285         285          1  api_common.getVisualKey
+         0         279         279         279          1  api_common.computeResourceKey
+         0         246         246         246          1  checkBasicPO/$g/1368158400
+         0          59          96          26          4  api_common.loadDocument
+         0          16         115           0         14  eoc_commons.jsonToDsArr
+         0         223         223         223          1  cwt_do.api.orderClassUI.onInit
+         0         221         221         221          1  cwt_do.api.orderClassUI.findRelatedObjects
+         0         215         215         215          1  cwt_do.api.orderClassUI.fetchRelatedObjects
+         0          69          72          67          3  cwt_do.api.mapOrder2OrderInstanceDoc.notes--157140706.cwOnItemConversion
+         0         204         204         204          1  cwt_do.api.orderClassUI.initGlobalVariables
+         0          32          60          13          6  cwt_do.orderInstance.cwOnDocInit
+         0         185         185         185          1  on.service.getDataURL
+         0          36         127           9          5  api_common.data.object.cwOnStructVisualKey
+         0           1          13           1        104  checkOptionalPO/$g/1368158400
+         0          34          65          19          5  cwt_do.api.orderClassUI.initDataOrderCollection
+         0          18          23          12          7  cwt_do.ClsDataOrderHelperUI.getAllItemsInBasket
+         0         119         119         119          1  cwtsr_cacheLib.getCachedProductsForCustomer
+         0         116         116         116          1  isBasicPO/$g/1368158400
+         0          56          59          54          2  cwl_on.createHashRequestID
+         0           3          10           0         33  api_common.isFault
+         0          36          42          28          3  cwt_do.api.mapOrder2OrderInstanceDoc.updatedBy-1311387404.cwOnItemConversion
+         0          97          97          97          1  cwt_do.ClsDataOrderHelperUI.addSite
+         0          32          45          24          3  cwl_om.scheduledOrderProcess.start.loopBack.cwOnDuration
+         0          88          88          88          1  api_common.isModelExtended
+         0          22          30          18          4  cwt_do.relatedObject.cwOnDocStore
+         0          17          82           0          5  api_common.getVisualKeyFromCache
+         0          79          79          79          1  cwl_interface_controller.TmfRestListenerController.onRequestIn
+         0          79          79          79          1  cwt_do.ClsDataOrderHelperUI.addAccount
+         0          18          25          12          4  cwt_do.siteDoc.cwOnDocVisualKey
+         0           7          14           4          9  cwt_do.api.orderClassUI.setField
+         0          62          62          62          1  ui_common.getDefaultPreference
+         0          14          29           7          4  cwt_do.relatedObject.cwOnDocInit
+         0          55          55          55          1  ui_common.getDefaultPreferenceData
+         0          27          33          20          2  cwl_on.addDaysFromToday
+         0          52          52          52          1  on.service.setUserLanguage
+         0          12          17          10          4  cwt_do.relatedObject.cwOnDocLoad
+         0          12          22           7          4  cwt_do.api.orderClassUI.findRelatedObjectInstance
+         0          47          47          47          1  cwl_interface_controller.TmfRestListenerController.parseQuerystring
+         0          45          45          45          1  cwt_do.api.orderClassUI.updateItemsAndOrderState
+         0          41          41          41          1  api_common.getStructure
+         0          40          40          40          1  on.service.setCatalogContextAttrs
+         0          17          27           7          2  cwt_do.ClsDataOrderHelperUI.updateSites
+         0          17          23          11          2  cwt_do.ClsDataOrderHelperUI.bindCatalog
+         0          16          22          10          2  cwl_on.validateField
+         0          32          32          32          1  eoc_commons.validateRelatedPartyHandler
+         0          31          31          31          1  cwl_fullStack.onResourceValidationExHandler
+         0           7          12           2          4  cwt_do._getSiteVisualKey
+         0          28          28          28          1  cwt_do.api.orderClassUI.setBasketContext
+         0          28          28          28          1  cwt_do.api.validateOrderHandler
+         0          26          26          26          1  cwt_do.setDefaultRelatedObjects
+         0          12          17           7          2  eoc_commons.validateEnum
+         0          25          25          25          1  cwl_on.lockOrUnlockON
+         0           4           7           2          5  api_common.setContext
+         0          24          24          24          1  cwl_interface_controller.TmfRestListenerController.onResponseOut
+         0          24          24          24          1  cwt_do.ClsDataOrderHelperUI.setBasketContext
+         0          22          22          22          1  dataorder.service.getOrderNextState
+         0           7           9           6          3  cwt_do.api.mapOrder2OrderInstanceDoc.attrs--1024322927.cwOnItemConversion
+         0          20          20          20          1  cwl_on.setHttpLocationHeader
+         0          10          12           7          2  api_common.getStructureType
+         0          18          18          18          1  cwl_on.setNewOrderStates
+         0          18          18          18          1  cwt_do.api.orderClassFactory
+         0          18          18          18          1  cwt_do.api.orderClassUI.getBasketContext
+         0           6          10           3          3  cwt_do.api.orderClassUI.setArrayField
+         0           6           7           5          3  cwt_do.api.mapOrder2OrderInstanceDoc.createdBy-1080670400.cwOnItemConversion
+         0          17          17          17          1  cwl_on.setOrderCatalogTime
+         0          14          14          14          1  cwt_do.api.getOrderNextStateCore
+         0          14          14          14          1  cwl_on.setCustomerMSISDN
+         0          13          13          13          1  on.service.validateResponse
+         0           6          10           3          2  cwt_do.ClsDataOrderHelperUI.updateAccounts
+         0          12          12          12          1  cwl_interface_controller.TmfRestListenerController.parseDynamicValues
+         0           4           4           3          3  cwt_do.api.mapOrder2OrderInstanceDoc.ordVer--1304809197.cwOnItemConversion
+         0           4           4           3          3  cwt_do.api.mapOrder2OrderInstanceDoc.relatedOrders--1406557411.cwOnItemConversion
+         0           5           7           4          2  cwtsr_cacheLib.createProductsBuffer
+         0          11          11          11          1  api_common.getModelType
+         0           1           2           0         10  api_common.data.object.getCacheableList
+         0           2           3           1          4  security.data.userProfile.cwGetStructId
+         0           4           8           1          2  cwa_security.userOnInit.Rule3.initializationRuleScript
+         0           7           7           7          1  cwl_fullStack.isCBIOFeatureEnabled
+         0           5           5           5          1  cwl_on.mapONRequestSC2DataOrder.isLocked-1478652886.cwOnItemConversion
+         0           1           1           0          4  api_common.data.object.computeVisualKey
+         0           4           4           4          1  on.service.process_response
+         0           1           1           1          3  com.conceptwave.system.UserInterface.onInit
+         0           4           4           4          1  cwt_do.getEocOrderPersistanceHandling
+         0           1           2           0          2  cwa_security.userOnInit.Rule4.initializationRuleScript
+         0           2           2           2          1  cwl_interface_controller.TmfRestListenerController.isApplyFilter
+         0           2           2           2          1  cwl_on.mapONRequestSC2DataOrder.isBundled-1574160069.cwOnItemConversion
+         0           2           2           2          1  cwInit.cwInterfaceDataCacheLoader
+         0           2           2           2          1  cwl_on.setCatalogContextOnSCResponse
+         0           1           1           1          1  cwl_on.expandEntity
+         0           0           1           0          2  cwa_security.userOnInit.Rule1.initializationRuleScript
+         0           0           1           0          2  cwa_security.userOnInit.Rule2.initializationRuleScript
+         0           1           1           1          1  cwl_interface_controller.TmfRestListenerController.onPostOut
+         0           1           1           1          1  cwl_interface_controller.TmfRestListenerController.onPostIn
+    -----------------------------------------------------
+    75,636         345   9,576,562           0    218,628
+
+
+ ********* 2018-05-06 18:50:41 Duration: 00:00:15 *********
+---------- SCRIPT CALL STACKS ----------
+     TOTAL     AVERAGE     LONGEST    SHORTEST      COUNT  ELEMENT
+  millisec    microsec    microsec    microsec
+     9,576   9,576,562   9,576,562   9,576,562          1  on.service.onapiJSBinding/createShoppingCart.cwOnJsProvider
+     9,568   9,568,983   9,568,983   9,568,983          1  . on.service.createShoppingCart
+     9,568   9,568,936   9,568,936   9,568,936          1  . . cwl_on.createShoppingCart
+     8,222      54,455     124,441      27,614        151  . . . dataorder.service.addOrderItem
+     8,219      54,433     124,420      27,590        151  . . . . cwt_do.api.addOrderItemHandler
+     8,214      54,397     124,387      27,548        151  . . . . . cwt_do.api.orderClassUI.addOrderItem
+     4,343      28,764      62,932          11        151  . . . . . . cwt_do.api.orderClassUI.createItemRelations
+     4,189      27,928      61,887      11,493        150  . . . . . . . cwt_do.ClsDataOrderHelperUI.saveBasket
+       125         419       1,153          76        300  . . . . . . . cwt_do.refreshPOAfterCreateOIRelation
+         9          61         152          48        150  . . . . . . . cwt_do.ClsDataOrderHelperUI.addRelation
+         2           9          19           5        300  . . . . . . . . cwt_do.fixItemRelationId
+         7          49         150          35        150  . . . . . . . cwt_do.api.orderClassUI.existsTargetRelation
+         5          39          77          28        150  . . . . . . . . cwt_do.ClsDataOrderHelperUI.getTargetRelationsForItem
+         2          15          34          12        150  . . . . . . . . . cwt_do.fixItemRelationId
+         0           3           9           2        150  . . . . . . . . . cwt_do.getEocRelationsHandling
+         1           7          14           4        150  . . . . . . . cwt_do.ClsDataOrderHelperUI.getObjectById
+     2,494      16,518      75,964       1,307        151  . . . . . . cwt_do.ClsDataOrderHelperUI.priceBasket
+       791       5,243      24,408       3,755        151  . . . . . . cwt_do.api.orderClassUI.addProductOfferingToOrder
+       757       5,016      24,191       3,584        151  . . . . . . . cwt_do.api.orderClassUI.addPOtoOrder
+       742       4,913      23,931       3,510        151  . . . . . . . . cwt_do.ClsDataOrderHelperUI.addItem
+       702       4,654      22,388       3,295        151  . . . . . . . . . cwt_do.ClsDataOrderHelperUI.addBasketItem
+       281         181       1,256          55      1,550  . . . . . . . . . . cwt_do.ClsDataOrderHelperUI.addRelation
+        31          10          84           5      3,100  . . . . . . . . . . . cwt_do.fixItemRelationId
+       101          50         197          31      2,023  . . . . . . . . . . cwt_do.ClsDataOrderHelperUI.isItemLogicalOffer
+        97          48         195          30      2,023  . . . . . . . . . . . cwt_do.ClsDataOrderHelperUI.isItemLogicalType
+        73          36         166          21      2,023  . . . . . . . . . . . . eoc_commons.getBaseCatalogItemType
+         9           4          69           2      2,023  . . . . . . . . . . . . . eoc_commons.Constants
+         5           2          13           1      2,023  . . . . . . . . . . . . cwt_do.getLogicalItemType
+         2           1         123           0      2,023  . . . . . . . . . . . . cwt_do.ClsDataOrderHelperUI.getConfig
+        43          69         662          51        624  . . . . . . . . . . cwt_do.addIncludeRelation
+        37          60         650          44        624  . . . . . . . . . . . cwt_do.ClsDataOrderHelperUI.addRelation
+        13          10         105           5      1,248  . . . . . . . . . . . . cwt_do.fixItemRelationId
+        39          50         175          19        775  . . . . . . . . . . cwt_do.getOwnertPO
+        14           6         115           0      2,082  . . . . . . . . . . . eoc_commons.checkBaseCatalogItemType
+        12          16         101          10        775  . . . . . . . . . . . cwt_do.getClsCatalogTypes
+        23          37          74          27        624  . . . . . . . . . . eoc_commons.getBaseCatalogItemType
+         3           5          21           4        624  . . . . . . . . . . . eoc_commons.Constants
+         4          30         230          20        150  . . . . . . . . . . $g$checkCommunityPO
+         2          14         212           9        150  . . . . . . . . . . . $g$communityPO_isValid
+         2          15          29          10        151  . . . . . . . . . . cwt_do.getClsCatalogTypes
+         2          15         109          10        151  . . . . . . . . . . cwt_do.ClsDataOrderHelperUI.addParent2ChildIncludeRelation
+         1           8          60           4        151  . . . . . . . . . . cwt_do.ClsDataOrderHelperUI.getBasketContext
+         0          20          85          14         46  . . . . . . . . . . $g$checkAddonPO
+         0           3          10           2        151  . . . . . . . . . . cwt_do.getEocRelationsHandling
+         0         246         246         246          1  . . . . . . . . . . $g$checkBasicPO
+         0         116         116         116          1  . . . . . . . . . . . $g$isBasicPO
+         0           1          13           1        104  . . . . . . . . . . $g$checkOptionalPO
+         0           3           7           1        151  . . . . . . . . . eoc_commons.isFault
+         3          23         185          18        151  . . . . . . . . cwt_do.ClsDataOrderHelperUI.getObjectById
+         2          14         164          10        151  . . . . . . . . . cwt_do.ClsDataOrderHelperUI.getObjectByGUID
+         0           1           2           1        151  . . . . . . . . cwt_do.Constants
+        23         155       2,408         103        151  . . . . . . . cwt_do.getCatalogHelper
+        19         126       2,380          78        151  . . . . . . . . cwt_do.getClsInterface
+         1          11         112           9        151  . . . . . . . cwt_do.api.orderClassUI.getAccount
+         0           2          19           2        151  . . . . . . . . cwt_do.ClsDataOrderHelperUI.getAccounts
+         1           8          78           6        151  . . . . . . . cwt_do.api.orderClassUI.getSite
+         0           2          18           1        151  . . . . . . . . cwt_do.ClsDataOrderHelperUI.getSites
+       324       2,147      47,751       1,205        151  . . . . . . cwt_do.api.orderClassUI.mapBasketItemDoc2OrderItem
+       109         726       7,537         173        151  . . . . . . . cwt_do.api.orderClassUI.findBasketItemCharges
+        64         156       1,733          21        414  . . . . . . . . cwt_do.copyChargeAttributes
+         0           0           0           0      3,149  . . . . . . . . . com.conceptwave.system.DataStructure.onInit
+        10          25          69          15        414  . . . . . . . . cwt_do.api.orderClassUI.setNameAndDescription
+         3           7          17           5        414  . . . . . . . . cwt_do.api.orderClassUI.setExternalIDs
+         1           2           9           1        414  . . . . . . . . cwt_do.api.orderClassUI.setType
+         0           0           1           0        414  . . . . . . . . com.conceptwave.system.DataStructure.onInit
+       109         726      45,902         355        151  . . . . . . . cwt_do.api.orderClassUI.findBasketItemCharacteristics
+         0           0           0           0      1,672  . . . . . . . . com.conceptwave.system.DataStructure.onInit
+        29         196         292         170        151  . . . . . . . cwt_do.api.orderClassUI.findBasketItemRelations
+        10          70         123          61        151  . . . . . . . . cwt_do.ClsDataOrderHelperUI.getTargetRelationsForItem
+         4          32          86          27        151  . . . . . . . . . cwt_do.fixItemRelationId
+         1           6           9           6        151  . . . . . . . . . cwt_do.getEocRelationsHandling
+         4          32         100          25        151  . . . . . . . . cwt_do.ClsDataOrderHelperUI.getSourceRelationsForItem
+         1           9          24           7        151  . . . . . . . . . cwt_do.fixItemRelationId
+         0           1          10           1        151  . . . . . . . . . cwt_do.getEocRelationsHandling
+         2           9          63           3        301  . . . . . . . . cwt_do.ClsDataOrderHelperUI.getObjectById
+         0           0           0           0        301  . . . . . . . . com.conceptwave.system.DataStructure.onInit
+         5          37         134          28        151  . . . . . . . eoc_commons.getBaseCatalogItemType
+         0           5           8           4        151  . . . . . . . . eoc_commons.Constants
+         5          37          53          33        151  . . . . . . . cwt_do.api.orderClassUI.findRelatedObjectsBySource
+         4          31          56          27        151  . . . . . . . cwt_do.api.orderClassUI.mapPOOIDocNotesToOrderItem
+         2          16         109          10        151  . . . . . . . cwt_do.getClsCatalogTypes
+         0           6          10           5        151  . . . . . . . cwt_do.api.mapBasketItemDoc2OrderItem.units--412012054.cwOnItemConversion
+         0           3           5           2        151  . . . . . . . cwt_do.api.mapBasketItemDoc2OrderItem.amount--269981095.cwOnItemConversion
+         0           2           9           1        151  . . . . . . . eoc_commons.checkBaseCatalogItemType
+         0           0           1           0        453  . . . . . . . com.conceptwave.system.DataStructure.onInit
+       110         142         735          85        775  . . . . . . cwt_do.setInitialState
+        46          60         611          32        775  . . . . . . . cwt_do.getInitialState
+        16          21         571           9        775  . . . . . . . . cwt_do.getClsCatalogTypes
+        11          14          44           8        775  . . . . . . . . cwt_do.doCatalogTypeConfig.isProduct
+         4           6          24           3        775  . . . . . . . . . cwt_do.doCatalogTypeConfig.getProductTypes
+         3           3          22           2        775  . . . . . . . . . cwt_dict.isOneOf
+         9           7          26           4      1,247  . . . . . . . . cwt_do.doCatalogTypeConfig.isService
+         4           3          17           1      1,247  . . . . . . . . . cwt_do.doCatalogTypeConfig.getServiceTypes
+         1           1          10           0      1,247  . . . . . . . . . cwt_dict.isOneOf
+         2          18         204          11        153  . . . . . . . . cwt_do.doCatalogTypeConfig.isResource
+         1           7          99           4        153  . . . . . . . . . cwt_do.doCatalogTypeConfig.getResourceTypes
+         0           1           4           1        153  . . . . . . . . . cwt_dict.isOneOf
+        36          46         357          26        775  . . . . . . . eoc_commons.getBaseCatalogItemType
+         5           7          24           4        775  . . . . . . . . eoc_commons.Constants
+         1           1           8           0        775  . . . . . . . cwt_do.Constants
+        16         107         386          84        151  . . . . . . dataorder.service.afterAddOrderItem
+        13          88         362          68        151  . . . . . . . cwl_fullStack.afterAddItemHandler
+         9          65         173          50        151  . . . . . . cwt_do.api.orderClassUI.setPOOINotes
+         0           0           0           0        151  . . . . . . . com.conceptwave.system.DataStructure.onInit
+         7          24         103           3        302  . . . . . . cwt_do.api.orderClassUI.getAccountId
+         1           9          61           5        151  . . . . . . . cwt_do.api.orderClassUI.getAccount
+         0           1          17           0        151  . . . . . . . . cwt_do.ClsDataOrderHelperUI.getAccounts
+         7          46          77          38        151  . . . . . . dataorder.service.beforeAddOrderItem
+         5          34          65          29        151  . . . . . . . cwt_do.api.beforeAddItemHandler
+         5          18         249           2        302  . . . . . . cwt_do.api.orderClassUI.getSiteId
+         1           7          34           4        151  . . . . . . . cwt_do.api.orderClassUI.getSite
+         0           1          10           0        151  . . . . . . . . cwt_do.ClsDataOrderHelperUI.getSites
+         4          27          37          22        151  . . . . . . cwt_do.api.orderClassUI.validateAndSetProductCharacteristics
+         2          15         131          10        151  . . . . . . cwt_do.api.orderClassUI.persistOrderItemRelatedObjects
+         2           7         143           2        302  . . . . . . cwt_do.api.orderClassUI.getDefaultCustomerId
+         1           8          39           5        151  . . . . . . cwt_do.api.orderClassUI.updateProductPrice
+         1           7          51           4        151  . . . . . . cwt_do.api.orderClassUI.getRootProductOffering
+         0           1          43           1        151  . . . . . . . eoc_commons.isFault
+         0           2           3           1        453  . . . . . . eoc_commons.isFault
+         0           4           8           3        151  . . . . . . eoc_commons.Constants
+         0           0           9           0        775  . . . . . . cwt_do.isPerItemUnderPOOI
+         0           0           1           0        151  . . . . . . cwt_do.Constants
+         0           6          35           5        151  . . . . . eoc_commons.isFault
+       940     313,421     925,604         936          3  . . . cwt_do.api.orderClassUI.toOrder
+       937     312,615     924,793          62          3  . . . . cwt_do.api.orderClassUI.getOrderItems
+       894       1,154      12,563         473        775  . . . . . cwt_do.api.orderClassUI.mapBasketItemDoc2OrderItem
+       539         696      11,899         136        775  . . . . . . cwt_do.api.orderClassUI.findBasketItemCharacteristics
+         1           0           0           0     10,968  . . . . . . . com.conceptwave.system.DataStructure.onInit
+        77         515       7,122          93        151  . . . . . . cwt_do.api.orderClassUI.findBasketItemCharges
+        47         115       1,998          11        414  . . . . . . . cwt_do.copyChargeAttributes
+         0           0           0           0      3,149  . . . . . . . . com.conceptwave.system.DataStructure.onInit
+         6          16          37          14        414  . . . . . . . cwt_do.api.orderClassUI.setNameAndDescription
+         2           5          12           4        414  . . . . . . . cwt_do.api.orderClassUI.setExternalIDs
+         0           1           8           1        414  . . . . . . . cwt_do.api.orderClassUI.setType
+         0           0           0           0        414  . . . . . . . com.conceptwave.system.DataStructure.onInit
+        63          82         297          59        775  . . . . . . cwt_do.api.orderClassUI.findBasketItemRelations
+        22          29          95          25        775  . . . . . . . cwt_do.ClsDataOrderHelperUI.getTargetRelationsForItem
+         9          12          76          11        775  . . . . . . . . cwt_do.fixItemRelationId
+         1           2           7           1        775  . . . . . . . . cwt_do.getEocRelationsHandling
+        16          20         168          19        775  . . . . . . . cwt_do.ClsDataOrderHelperUI.getSourceRelationsForItem
+         6           8          21           7        775  . . . . . . . . cwt_do.fixItemRelationId
+         1           1         121           1        775  . . . . . . . . cwt_do.getEocRelationsHandling
+         2           3          33           2        774  . . . . . . . cwt_do.ClsDataOrderHelperUI.getObjectById
+         0           0           0           0        774  . . . . . . . com.conceptwave.system.DataStructure.onInit
+        27          36         150          29        775  . . . . . . eoc_commons.getBaseCatalogItemType
+         4           5          11           4        775  . . . . . . . eoc_commons.Constants
+        10          14         181          12        775  . . . . . . cwt_do.api.orderClassUI.findRelatedObjectsBySource
+         8          11         110          10        775  . . . . . . cwt_do.getClsCatalogTypes
+         5           6          31           1        775  . . . . . . eoc_commons.checkBaseCatalogItemType
+         4           5          26           2        775  . . . . . . cwt_do.api.orderClassUI.mapPOOIDocNotesToOrderItem
+         2           3           9           2        775  . . . . . . cwt_do.api.mapBasketItemDoc2OrderItem.units--412012054.cwOnItemConversion
+         1           1           4           1        775  . . . . . . cwt_do.api.mapBasketItemDoc2OrderItem.amount--269981095.cwOnItemConversion
+         0           0           0           0      2,325  . . . . . . com.conceptwave.system.DataStructure.onInit
+         6           4          35           3      1,550  . . . . . performanceUtils.getObject
+         5           6          62           5        775  . . . . . performanceUtils.putObject
+         0          19          21          16          3  . . . . . cwt_do.ClsDataOrderHelperUI.getAllItemsInBasket
+         0         329         358         298          3  . . . . cwt_do.api.orderClassUI.getRelatedObjects
+         0          53          74          42         12  . . . . . cwt_do.api.orderClassUI.mapRelatedObjectDoc2Structure
+         0           0           0           0         12  . . . . . . com.conceptwave.system.DataStructure.onInit
+         0          24         115           0          9  . . . . eoc_commons.jsonToDsArr
+         0          13          22           5          6  . . . . performanceUtils.getObject
+         0           0           0           0          3  . . . . com.conceptwave.system.DataStructure.onInit
+       146     146,306     146,306     146,306          1  . . . cwl_on.populateONItemsFromDataOrder
+       132     132,579     132,579     132,579          1  . . . . cwt_do.new_cwt_do.dataOrder.getHelper
+       132     132,570     132,570     132,570          1  . . . . . cwt_do.getDOHelper
+       132     132,202     132,202     132,202          1  . . . . . . cwt_do.ClsDataOrderHelperUI.initial
+       104     104,832     104,832     104,832          1  . . . . . . . cwt_do.getBasketById
+        94      94,630      94,630      94,630          1  . . . . . . . . cwt_do.readBasketByIdFromCache
+        10      10,163      10,163      10,163          1  . . . . . . . . cwt_do.cloneBasket
+        13      13,902      13,902      13,902          1  . . . . . . . cwt_do.ClsDataOrderHelperUI.loadItems
+        13      13,814      13,814      13,814          1  . . . . . . . . cwt_do.ClsDataOrderHelperUI.remapGUIDs
+         0          23          23          23          1  . . . . . . . . . cwt_do.ClsDataOrderHelperUI.getAllItemsInBasket
+         0          27          27          27          1  . . . . . . . . cwt_do.ClsDataOrderHelperUI.updateSites
+         0          10          10          10          1  . . . . . . . . cwt_do.ClsDataOrderHelperUI.updateAccounts
+        12      12,848      12,848      12,848          1  . . . . . . . cwt_do.ClsDataOrderHelperUI.recalculateCalculatedValuesInBasket
+         0          23          23          23          1  . . . . . . . . cwt_do.ClsDataOrderHelperUI.getAllItemsInBasket
+         0         480         480         480          1  . . . . . . . cwt_do.new_cwt_do.dataOrder.cwOnOrdVisualKey
+         0         473         473         473          1  . . . . . . . . cwt_do._getVisualKey
+         0          23          23          23          1  . . . . . . . cwt_do.ClsDataOrderHelperUI.bindCatalog
+         0         288         288         288          1  . . . . . . cwt_do.ClsDataOrderHelperUI.onInit
+         0         272         272         272          1  . . . . . . . cwt_do.ClsDataOrderHelperUI.initGlobalVariables
+         0         135         135         135          1  . . . . . . . . cwt_do.getCatalogHelper
+         0         100         100         100          1  . . . . . . . . . cwt_do.getClsInterface
+         0          44          44          44          1  . . . . . . . . cwt_do.getClsInterface
+         0           1           1           1          1  . . . . . . . com.conceptwave.system.UserInterface.onInit
+         8       8,363       8,363       8,363          1  . . . . cwt_do.getOrderById
+         5       5,455       5,455       5,455          1  . . . . . cwt_do.cloneOrder
+         0          97         176          56          3  . . . . . . cwt_do.new_cwt_do.dataOrder.cwOnOrdVisualKey
+         0          91         168          50          3  . . . . . . . cwt_do._getVisualKey
+         0          12          17          10          4  . . . . . . cwt_do.relatedObject.cwOnDocLoad
+         0          19          25          13          2  . . . . . . cwt_do.siteDoc.cwOnDocVisualKey
+         0          10          12           7          2  . . . . . . . cwt_do._getSiteVisualKey
+         0          13          13          13          1  . . . . . . cwt_do.orderInstance.cwOnDocInit
+         2       2,862       2,862       2,862          1  . . . . . cwt_do.readOrderByIdFromCache
+         0          26          26          26          1  . . . . . . cwt_do.orderInstance.cwOnDocInit
+         1          11          89           9        151  . . . . eoc_commons.getResourceURI
+         0           0           1           0        151  . . . . com.conceptwave.system.DataStructure.onInit
+       125      41,725      55,939      22,031          3  . . . cwt_do.api.orderClassUI.save
+       124      41,406      55,570      21,747          3  . . . . cwt_do.ClsDataOrderHelperUI.save
+        67      22,500      36,715         667          3  . . . . . cwt_do.ClsDataOrderHelperUI.saveBasket
+        35      11,786      18,666           6          3  . . . . . cwt_do.ClsDataOrderHelperUI.priceBasket
+        21       7,087      21,053          63          3  . . . . . cwt_do.new_cwt_do.dataOrder.saveOrder
+         0          22          30          18          4  . . . . . . cwt_do.relatedObject.cwOnDocStore
+         0          17          23          12          2  . . . . . . cwt_do.siteDoc.cwOnDocVisualKey
+         0           4           5           2          2  . . . . . . . cwt_do._getSiteVisualKey
+         0          15          15          15          1  . . . . . . cwt_do.orderInstance.cwOnDocStore
+         0          69          72          67          3  . . . . cwt_do.api.mapOrder2OrderInstanceDoc.notes--157140706.cwOnItemConversion
+         0          36          42          28          3  . . . . cwt_do.api.mapOrder2OrderInstanceDoc.updatedBy-1311387404.cwOnItemConversion
+         0           7           9           6          3  . . . . cwt_do.api.mapOrder2OrderInstanceDoc.attrs--1024322927.cwOnItemConversion
+         0           6           7           5          3  . . . . cwt_do.api.mapOrder2OrderInstanceDoc.createdBy-1080670400.cwOnItemConversion
+         0           4           4           3          3  . . . . cwt_do.api.mapOrder2OrderInstanceDoc.ordVer--1304809197.cwOnItemConversion
+         0           4           4           3          3  . . . . cwt_do.api.mapOrder2OrderInstanceDoc.relatedOrders--1406557411.cwOnItemConversion
+        10      10,245      10,245      10,245          1  . . . cwt_do.createOrderClassInstance
+         9       9,906       9,906       9,906          1  . . . . cwt_do.api.orderClassUI.init
+         8       8,982       8,982       8,982          1  . . . . . cwt_do.new_cwt_do.dataOrder.getHelper
+         8       8,976       8,976       8,976          1  . . . . . . cwt_do.getDOHelper
+         8       8,586       8,586       8,586          1  . . . . . . . cwt_do.ClsDataOrderHelperUI.initial
+         5       5,732       5,732       5,732          1  . . . . . . . . cwt_do.ClsDataOrderHelperUI.save
+         4       4,065       4,065       4,065          1  . . . . . . . . . cwt_do.ClsDataOrderHelperUI.saveBasket
+         1       1,633       1,633       1,633          1  . . . . . . . . . cwt_do.new_cwt_do.dataOrder.saveOrder
+         0         512         512         512          1  . . . . . . . . . . cwt_do.orderInstance.cwOnDocStore
+         0          44          44          44          1  . . . . . . . . . . cwt_do.new_cwt_do.dataOrder.cwOnOrdVisualKey
+         0          37          37          37          1  . . . . . . . . . . . cwt_do._getVisualKey
+         0           8           8           8          1  . . . . . . . . . cwt_do.ClsDataOrderHelperUI.priceBasket
+         1       1,864       1,864       1,864          1  . . . . . . . . cwt_do.getBasketById
+         1       1,711       1,711       1,711          1  . . . . . . . . . cwt_do.readBasketByIdFromCache
+         0         120         120         120          1  . . . . . . . . . cwt_do.cloneBasket
+         0         260         483          37          2  . . . . . . . . cwt_do.new_cwt_do.dataOrder.cwOnOrdVisualKey
+         0         253         477          29          2  . . . . . . . . . cwt_do._getVisualKey
+         0          71          71          71          1  . . . . . . . . cwt_do.ClsDataOrderHelperUI.loadItems
+         0          37          37          37          1  . . . . . . . . . cwt_do.ClsDataOrderHelperUI.remapGUIDs
+         0          13          13          13          1  . . . . . . . . . . cwt_do.ClsDataOrderHelperUI.getAllItemsInBasket
+         0           7           7           7          1  . . . . . . . . . cwt_do.ClsDataOrderHelperUI.updateSites
+         0           3           3           3          1  . . . . . . . . . cwt_do.ClsDataOrderHelperUI.updateAccounts
+         0          11          11          11          1  . . . . . . . . cwt_do.ClsDataOrderHelperUI.bindCatalog
+         0         341         341         341          1  . . . . . . . cwt_do.ClsDataOrderHelperUI.onInit
+         0         330         330         330          1  . . . . . . . . cwt_do.ClsDataOrderHelperUI.initGlobalVariables
+         0         163         163         163          1  . . . . . . . . . cwt_do.getCatalogHelper
+         0         135         135         135          1  . . . . . . . . . . cwt_do.getClsInterface
+         0          69          69          69          1  . . . . . . . . . cwt_do.getClsInterface
+         0           1           1           1          1  . . . . . . . . com.conceptwave.system.UserInterface.onInit
+         0          34          65          19          5  . . . . . cwt_do.api.orderClassUI.initDataOrderCollection
+         0          45          45          45          1  . . . . . cwt_do.api.orderClassUI.updateItemsAndOrderState
+         0          42          42          42          1  . . . . . cwt_do.new_cwt_do.dataOrder.cwOnOrdVisualKey
+         0          35          35          35          1  . . . . . . cwt_do._getVisualKey
+         0          17          17          17          1  . . . . . cwt_do.orderInstance.cwOnDocInit
+         0           1           2           0          2  . . . . . eoc_commons.jsonToDsArr
+         0           0           0           0          1  . . . . . com.conceptwave.system.DataStructure.onInit
+         0         223         223         223          1  . . . . cwt_do.api.orderClassUI.onInit
+         0         204         204         204          1  . . . . . cwt_do.api.orderClassUI.initGlobalVariables
+         0           1           1           1          1  . . . . . . cwt_do.Constants
+         0           1           1           1          1  . . . . . com.conceptwave.system.UserInterface.onInit
+         0          18          18          18          1  . . . . cwt_do.api.orderClassFactory
+         0          13          13          13          1  . . . . performanceUtils.putObject
+         7       7,710       7,710       7,710          1  . . . dataorder.service.createOrder
+         7       7,689       7,689       7,689          1  . . . . cwt_do.api.createOrderHandler
+         5       5,143       5,143       5,143          1  . . . . . cwt_do.api.orderClassUI.loadItemsFromServiceRegistry
+         5       5,117       5,117       5,117          1  . . . . . . cwt_on_cim_ext.getExistingAccountServices
+         4       4,677       4,677       4,677          1  . . . . . . . cwt_sr.getProductHelper
+         4       4,667       4,667       4,667          1  . . . . . . . . api_common.publish
+         4       4,633       4,633       4,633          1  . . . . . . . . . cwtsr_Lib.getProduct
+         4       4,480       4,480       4,480          1  . . . . . . . . . . cwtsr_Lib.productsFinder.cwOnFinderSel
+         3       1,630       1,661       1,600          2  . . . . . . . . . . . cwtsr_cacheLib.getProductsItemsBufferForCustomer
+         3       1,616       1,644       1,588          2  . . . . . . . . . . . . cwtsr_cacheLib.getFullProductsAssociationsByCustomerId
+         0           5           7           4          2  . . . . . . . . . . . . cwtsr_cacheLib.createProductsBuffer
+         0         867         867         867          1  . . . . . . . . . . . cwtsr_cacheLib.updateOnDemand
+         0         119         119         119          1  . . . . . . . . . . . cwtsr_cacheLib.getCachedProductsForCustomer
+         0           2           2           2          1  . . . . . . . . . . . . cwInit.cwInterfaceDataCacheLoader
+         0           0           0           0          1  . . . . . . . . . . . com.conceptwave.system.DataStructure.onInit
+         0           7           7           7          1  . . . . . . . . . . eoc_commons.isFault
+         0           5           5           5          1  . . . . . . . . . api_common.isFault
+         0         221         221         221          1  . . . . . . . cwt_do.api.orderClassUI.findRelatedObjects
+         0         215         215         215          1  . . . . . . . . cwt_do.api.orderClassUI.fetchRelatedObjects
+         0           0           0           0          3  . . . . . . . . . com.conceptwave.system.DataStructure.onInit
+         0          31          31          31          1  . . . . . . . cwt_do.getClsCatalogTypes
+         0           4           4           4          1  . . . . . . . cwt_do.Constants
+         0           0           0           0          1  . . . . . . . com.conceptwave.system.DataStructure.onInit
+         0           4           4           4          1  . . . . . . cwt_do.getEocOrderPersistanceHandling
+         0           1           1           1          1  . . . . . . eoc_commons.isFault
+         1         379         770         211          4  . . . . . cwt_do.api.orderClassUI.addRelatedObject
+         0          97          97          97          1  . . . . . . cwt_do.ClsDataOrderHelperUI.addSite
+         0          79          79          79          1  . . . . . . cwt_do.ClsDataOrderHelperUI.addAccount
+         0          14          29           7          4  . . . . . . cwt_do.relatedObject.cwOnDocInit
+         0          12          22           7          4  . . . . . . cwt_do.api.orderClassUI.findRelatedObjectInstance
+         0           2           4           1          4  . . . . . . eoc_commons.isFault
+         0         651         651         651          1  . . . . . cwt_do.api.orderClassUI.toOrder
+         0         263         263         263          1  . . . . . . cwt_do.api.orderClassUI.getRelatedObjects
+         0          41          47          34          4  . . . . . . . cwt_do.api.orderClassUI.mapRelatedObjectDoc2Structure
+         0           0           0           0          4  . . . . . . . . com.conceptwave.system.DataStructure.onInit
+         0          74          74          74          1  . . . . . . cwt_do.api.orderClassUI.getOrderItems
+         0          12          12          12          1  . . . . . . . cwt_do.ClsDataOrderHelperUI.getAllItemsInBasket
+         0           9          12           6          2  . . . . . . performanceUtils.getObject
+         0           1           2           0          3  . . . . . . eoc_commons.jsonToDsArr
+         0           0           0           0          1  . . . . . . com.conceptwave.system.DataStructure.onInit
+         0           7          14           4          9  . . . . . cwt_do.api.orderClassUI.setField
+         0          28          28          28          1  . . . . . cwt_do.api.orderClassUI.setBasketContext
+         0          24          24          24          1  . . . . . . cwt_do.ClsDataOrderHelperUI.setBasketContext
+         0          28          28          28          1  . . . . . cwt_do.api.validateOrderHandler
+         0           6          10           3          3  . . . . . cwt_do.api.orderClassUI.setArrayField
+         0           0           0           0          1  . . . . . eoc_commons.isFault
+         5          35         381          25        151  . . . eoc_commons.validateProductOfferingItem
+         0           2          41           0        302  . . . . eoc_commons.forEach
+         4          32         159          24        151  . . . cwl_on.mapOnExtendedOrderItem2DoOrderItem.action-770072745.cwOnItemConversion
+         0           1           4           1        151  . . . . cwt_do.Constants
+         4          31          68          16        151  . . . cwl_on.getRelatedItemsFromItem
+         4          29         209          22        152  . . . cwl_on.getRelatedObjectsFromItem
+         0           1           9           0        152  . . . . cwt_do.Constants
+         0          16          22          10          2  . . . . cwl_on.validateField
+         0          12          17           7          2  . . . . . eoc_commons.validateEnum
+         0          32          32          32          1  . . . . eoc_commons.validateRelatedPartyHandler
+         0           2           4           1          6  . . . . eoc_commons.isFault
+         0           0           0           0          2  . . . . com.conceptwave.system.DataStructure.onInit
+         3          24          57          22        151  . . . cwt_do.setTreeCharacteristics
+         0           0           3           0        151  . . . . cwt_do.Constants
+         2       2,178       2,178       2,178          1  . . . cwl_on.updateReferenceRequestId
+         0          54          54          54          1  . . . . cwl_on.createHashRequestID
+         2           1          10           1      1,214  . . . eoc_commons.isFault
+         1       1,918       1,918       1,918          1  . . . cwl_on.resourceValidationON
+         0          59          59          59          1  . . . . cwl_on.createHashRequestID
+         0          31          31          31          1  . . . . cwl_fullStack.onResourceValidationExHandler
+         0           7           7           7          1  . . . . . cwl_fullStack.isCBIOFeatureEnabled
+         0           3           5           1          2  . . . . eoc_commons.isFault
+         1           6          20           4        151  . . . cwl_on.mapOnExtendedOrderItem2DoOrderItem.cwOnMapConv
+         0           5          15           4        151  . . . eoc_commons.Constants
+         0         424         424         424          1  . . . cwl_on.mapDataOrder2ONResponse
+         0         405         405         405          1  . . . . cwl_on.mapDO2ONResponseHandler
+         0           2           4           0          2  . . . . . cwt_do.Constants
+         0           0           0           0          3  . . . . . com.conceptwave.system.DataStructure.onInit
+         0          27          33          20          2  . . . cwl_on.addDaysFromToday
+         0           0           0           0        154  . . . com.conceptwave.system.DataStructure.onInit
+         0          26          26          26          1  . . . cwt_do.setDefaultRelatedObjects
+         0           0           0           0          2  . . . . com.conceptwave.system.DataStructure.onInit
+         0          25          25          25          1  . . . cwl_on.lockOrUnlockON
+         0           2           2           2          1  . . . . eoc_commons.isFault
+         0          22          22          22          1  . . . dataorder.service.getOrderNextState
+         0          14          14          14          1  . . . . cwt_do.api.getOrderNextStateCore
+         0           0           0           0          1  . . . . . com.conceptwave.system.DataStructure.onInit
+         0          20          20          20          1  . . . cwl_on.setHttpLocationHeader
+         0          18          18          18          1  . . . cwl_on.setNewOrderStates
+         0          18          18          18          1  . . . cwt_do.api.orderClassUI.getBasketContext
+         0          10          10          10          1  . . . . cwt_do.ClsDataOrderHelperUI.getBasketContext
+         0          17          17          17          1  . . . cwl_on.setOrderCatalogTime
+         0          14          14          14          1  . . . cwl_on.setCustomerMSISDN
+         0           5           5           5          1  . . . eoc_commons.getResourceURI
+         0           5           5           5          1  . . . cwl_on.mapONRequestSC2DataOrder.isLocked-1478652886.cwOnItemConversion
+         0           4           4           4          1  . . . cwt_do.Constants
+         0           2           2           2          1  . . . cwl_on.mapONRequestSC2DataOrder.isBundled-1574160069.cwOnItemConversion
+         0           2           2           2          1  . . . cwl_on.setCatalogContextOnSCResponse
+         0           1           1           1          1  . . . cwl_on.expandEntity
+         0          13          13          13          1  . . on.service.validateResponse
+         0           7           7           7          1  . . . eoc_commons.isFault
+         7       7,257       7,257       7,257          1  . on.service.validateRequestElements
+         0           0           0           0        151  . . com.conceptwave.system.DataStructure.onInit
+         0         185         185         185          1  . on.service.getDataURL
+         0           0           0           0          1  . . com.conceptwave.system.DataStructure.onInit
+         0          52          52          52          1  . on.service.setUserLanguage
+         0          40          40          40          1  . on.service.setCatalogContextAttrs
+         0           4           4           4          1  . on.service.process_response
+         0           1           1           1          1  . . eoc_commons.isFault
+       284     284,410     284,410     284,410          1  security.loginJava
+       284     284,392     284,392     284,392          1  . security.login
+       162     162,411     162,411     162,411          1  . . security.getUserProfile
+       160     160,875     160,875     160,875          1  . . . security.getUserProfileByKey
+        29           0          19           0    121,978  . . . . security.data.privilege.cwGetStructId
+        17       5,689      11,755       1,561          3  . . . . security.getGroupPrivilegesByKey
+        16       5,660      11,744       1,522          3  . . . . . api_common.executeGet
+        16       5,397      11,355       1,356          3  . . . . . . api_common.publish
+        16       5,341      11,314       1,292          3  . . . . . . . cwl_security.getGroupPrivilegesByKey
+        15       5,328      11,303       1,279          3  . . . . . . . . cwl_security.getGroupPrivileges
+         0           0           0           0        375  . . . . . . . . . com.conceptwave.system.DataStructure.onInit
+         0           3          10           0          9  . . . . . . . api_common.isFault
+         0         180         340          70          3  . . . . . . api_common.putObjectInCache
+         0          15          17          12          3  . . . . . . . api_common.data.object.cwOnStructVisualKey
+         0           1           1           0          3  . . . . . . . . api_common.getVisualKeyFromCache
+         0           1           1           1          3  . . . . . . . . api_common.data.object.computeVisualKey
+         0           1           2           1          3  . . . . . . . api_common.data.object.getCacheableList
+         0           4           6           2          3  . . . . . . api_common.setContext
+         0           1           2           1          3  . . . . . . api_common.isFault
+         0           0           1           0          3  . . . . . . com.conceptwave.system.DataStructure.onInit
+         0           0           0           0          3  . . . . . . api_common.data.object.getCacheableList
+         3       3,324       3,324       3,324          1  . . . . api_common.executeGet
+         2       2,514       2,514       2,514          1  . . . . . api_common.publish
+         2       2,435       2,435       2,435          1  . . . . . . cwl_security.getUserByKey
+         2       2,427       2,427       2,427          1  . . . . . . . cwl_security.getUserProfile
+         1       1,123       1,123       1,123          1  . . . . . . . . cwl_security.getUserGroups
+         0          47          85          26          3  . . . . . . . . . api_common.loadDocument
+         0           5           8           3          3  . . . . . . . . . api_common.isFault
+         0           7           7           7          1  . . . . . . . . . api_common.getStructureType
+         0           0           0           0          3  . . . . . . . . . com.conceptwave.system.DataStructure.onInit
+         1       1,010       1,010       1,010          1  . . . . . . . . api_common.getDocumentById
+         0          88          88          88          1  . . . . . . . . . api_common.isModelExtended
+         0          96          96          96          1  . . . . . . . . api_common.loadDocument
+         0           0           0           0          1  . . . . . . . . . com.conceptwave.system.DataStructure.onInit
+         0          41          41          41          1  . . . . . . . . api_common.getStructure
+         0          12          12          12          1  . . . . . . . . . api_common.getStructureType
+         0           1           1           1          1  . . . . . . . . . cwa_security.userOnInit.Rule3.initializationRuleScript
+         0           0           0           0          1  . . . . . . . . . cwa_security.userOnInit.Rule4.initializationRuleScript
+         0           0           0           0          1  . . . . . . . . . cwa_security.userOnInit.Rule1.initializationRuleScript
+         0           0           0           0          1  . . . . . . . . . cwa_security.userOnInit.Rule2.initializationRuleScript
+         0           0           0           0          1  . . . . . . . . . com.conceptwave.system.DataStructure.onInit
+         0          11          11          11          1  . . . . . . . . api_common.getModelType
+         0           3           3           3          1  . . . . . . . . api_common.isFault
+         0           2           3           0          3  . . . . . . api_common.isFault
+         0         645         645         645          1  . . . . . api_common.putObjectInCache
+         0         290         290         290          1  . . . . . . security.data.userProfile.computeVisualKey
+         0         285         285         285          1  . . . . . . . api_common.getVisualKey
+         0         279         279         279          1  . . . . . . . . api_common.computeResourceKey
+         0         127         127         127          1  . . . . . . api_common.data.object.cwOnStructVisualKey
+         0          82          82          82          1  . . . . . . . api_common.getVisualKeyFromCache
+         0           2           2           2          1  . . . . . . . security.data.userProfile.cwGetStructId
+         0           1           1           1          2  . . . . . . security.data.userProfile.cwGetStructId
+         0           2           2           2          1  . . . . . . api_common.data.object.getCacheableList
+         0           7           7           7          1  . . . . . api_common.setContext
+         0           1           1           1          1  . . . . . api_common.isFault
+         0           0           0           0          1  . . . . . api_common.data.object.getCacheableList
+         0           0           0           0          1  . . . . . com.conceptwave.system.DataStructure.onInit
+         0           3           4           2          4  . . . . api_common.isFault
+         0           0           0           0          2  . . . . com.conceptwave.system.DataStructure.onInit
+         1       1,310       1,310       1,310          1  . . . security.getUserPreferenceByKey
+         1       1,294       1,294       1,294          1  . . . . api_common.executeGet
+         0         721         721         721          1  . . . . . api_common.publish
+         0         683         683         683          1  . . . . . . cwl_security.getUserPreferenceByKey
+         0          62          62          62          1  . . . . . . . ui_common.getDefaultPreference
+         0          55          55          55          1  . . . . . . . . ui_common.getDefaultPreferenceData
+         0           1           3           0          3  . . . . . . api_common.isFault
+         0          32          32          32          1  . . . . . api_common.putObjectInCache
+         0           9           9           9          1  . . . . . . api_common.data.object.cwOnStructVisualKey
+         0           0           0           0          1  . . . . . . . api_common.data.object.computeVisualKey
+         0           0           0           0          1  . . . . . . . api_common.getVisualKeyFromCache
+         0           0           0           0          1  . . . . . . api_common.data.object.getCacheableList
+         0           2           2           2          1  . . . . . api_common.setContext
+         0           1           1           1          1  . . . . . api_common.isFault
+         0           0           0           0          1  . . . . . com.conceptwave.system.DataStructure.onInit
+         0           0           0           0          1  . . . . . api_common.data.object.getCacheableList
+         0           8           8           8          1  . . . cwa_security.userOnInit.Rule3.initializationRuleScript
+         0           3           4           2          2  . . . api_common.isFault
+         0           2           2           2          1  . . . cwa_security.userOnInit.Rule4.initializationRuleScript
+         0           1           1           1          1  . . . cwa_security.userOnInit.Rule1.initializationRuleScript
+         0           1           1           1          1  . . . cwa_security.userOnInit.Rule2.initializationRuleScript
+         0           1           1           1          1  . . . com.conceptwave.system.DataStructure.onInit
+       121     121,067     121,067     121,067          1  . . cwl_security.login
+         0           4           5           2          2  . . api_common.isFault
+         0           3           3           3          1  . . security.data.userProfile.cwGetStructId
+        16       5,533       9,901       1,349          3  cwl_om.scheduledOrderProcess.start.evaluate.cwOnProcActBefore
+        14       4,705       7,487       1,311          3  . cwl_om.processScheduledOrder
+         0          46          60          35          3  . . cwt_do.orderInstance.cwOnDocInit
+         0           7          14           3          3  . . cwt_do.Constants
+         5       1,149       1,662         986          5  cwl_dbqueue.queueListenerThread
+         4         849         879         816          5  . cwl_dbqueue.getNextMessage
+         0          32          45          24          3  cwl_om.scheduledOrderProcess.start.loopBack.cwOnDuration
+         0          79          79          79          1  cwl_interface_controller.TmfRestListenerController.onRequestIn
+         0          47          47          47          1  . cwl_interface_controller.TmfRestListenerController.parseQuerystring
+         0          12          12          12          1  . cwl_interface_controller.TmfRestListenerController.parseDynamicValues
+         0           1           1           1          1  . cwl_interface_controller.TmfRestListenerController.onPostIn
+         0          53          53          53          1  com.conceptwave.system.DataStructure.onInit
+         0          24          24          24          1  cwl_interface_controller.TmfRestListenerController.onResponseOut
+         0           1           1           1          1  . cwl_interface_controller.TmfRestListenerController.onPostOut
+         0           2           2           2          1  cwl_interface_controller.TmfRestListenerController.isApplyFilter
+    -----------------------------------------------------
+     9,883     581,387   9,576,562           2         17
+
+
+ ********* 2018-05-06 18:50:41 Duration: 00:00:15 *********
+---------- DATABASE OPERATIONS ----------
+     TOTAL     AVERAGE     LONGEST    SHORTEST      COUNT  ELEMENT
+  millisec    microsec    microsec    microsec
+       645       4,302      10,155       3,157        150  UPDATE cwpc_basketItem SET BASKETID=?,ITEMCODE=?,CWCREATED=?,CWCREATEDBY=?,LASTUPDATEDDATE=?,UPDATEDBY=?,PARENTBASKETITEMID=?,RELATIONNAME=?,SEQUENCENO=?,REQUESTTIME=?,SEARCHTEXT=?,DATA=?,STATE=?,ACTION=?,CUSTOMERID=?,ACCOUNTID=?,LOCATIONID=?,SITEID=?,SERVICEDATE=?,FAMILY=?,CATEGORY=?,RELATIONS=?,ENTITYID=?,INTERNALSTATE=?,GROUPDIMENSIONS=?,CONTEXTID=?,INTERNALREASONCODE=?,LIFECYCLESTATETIMELINE=?,CURRENTLIFECYCLESTATE=?,HID=?,FULFILLMENTSTATE=?,SERIALNUMBER=?,SERVICEREGISTRYID=?,POOIACTION=?,GUID=?,PREVSTATUS=?,SOURCE=?,EFFECTIVEDATE=?,SERVICESTARTDATE=?,ISCOMPLETED=?,DESCRIPTION=?,ASSIGNEDPRIORITY=?,BITYPE=?,BISPECIFICATION=?,DUEDATE=?,COMPLETIONDATE=?,NOTES=?,ITEMNOTES=?,ISPAIRED=?,PRODUCT=?,QUANTITY=?,RESOURCES=?,SERVICES=?,ATTRS=?,EXTERNALID=? WHERE BASKETITEMID=?
+       504         651      53,701         328        775  SELECT cwpc_basketItemCharge.BASKETID,cwpc_basketItemCharge.BASKETITEMID,cwpc_basketItemCharge.CHARGETYPECODE,cwpc_basketItemCharge.AMOUNT,cwpc_basketItemCharge.SEQUENCENO,cwpc_basketItemCharge.CURRENCY,cwpc_basketItemCharge.FREQUENCY,cwpc_basketItemCharge.TAXCODE,cwpc_basketItemCharge.LABEL,cwpc_basketItemCharge.CWCREATED,cwpc_basketItemCharge.CWCREATEDBY,cwpc_basketItemCharge.LASTUPDATEDDATE,cwpc_basketItemCharge.UPDATEDBY,cwpc_basketItemCharge.TYPE,cwpc_basketItemCharge.BASKETITEMCHARGEID,cwpc_basketItemCharge.ITEMCHARGECODE,cwpc_basketItemCharge.OVERRIDEAMOUNT,cwpc_basketItemCharge.TARGETBASKETCHARGEID,cwpc_basketItemCharge.ITEMCHARGERELATIONCODE,cwpc_basketItemCharge.OVERRIDDENRULERESULT,cwpc_basketItemCharge.DATA FROM CWPC_BASKETITEMCHARGE WHERE BASKETID=? AND BASKETITEMID =? ORDER BY SEQUENCENO
+       469       3,133      21,858       2,007        150  INSERT INTO cwpc_basketItem(BASKETITEMID,BASKETID,ITEMCODE,CWCREATED,CWCREATEDBY,LASTUPDATEDDATE,UPDATEDBY,PARENTBASKETITEMID,RELATIONNAME,SEQUENCENO,REQUESTTIME,SEARCHTEXT,DATA,STATE,ACTION,CUSTOMERID,ACCOUNTID,LOCATIONID,SITEID,SERVICEDATE,FAMILY,CATEGORY,RELATIONS,ENTITYID,INTERNALSTATE,GROUPDIMENSIONS,CONTEXTID,INTERNALREASONCODE,LIFECYCLESTATETIMELINE,CURRENTLIFECYCLESTATE,HID,FULFILLMENTSTATE,SERIALNUMBER,SERVICEREGISTRYID,POOIACTION,GUID,PREVSTATUS,SOURCE,EFFECTIVEDATE,SERVICESTARTDATE,ISCOMPLETED,DESCRIPTION,ASSIGNEDPRIORITY,BITYPE,BISPECIFICATION,DUEDATE,COMPLETIONDATE,NOTES,ITEMNOTES,ISPAIRED,PRODUCT,QUANTITY,RESOURCES,SERVICES,ATTRS,EXTERNALID) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+        89         593       1,735         352        150  INSERT INTO cwpc_basketItemRelation(BASKETITEMIDFROM,BASKETITEMIDTO,RELATIONNAME,CWCREATED,CWCREATEDBY,LASTUPDATEDDATE,UPDATEDBY,BASKETID,BASKETITEMRELATIONID,INTERNALSTATE,EFFECTIVEDATE,STATUS,SOURCE,GUID,PERCENTAGE,USERFLAG) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+        86         575       1,508         372        151  INSERT INTO cwpc_basketItemCharge(BASKETID,BASKETITEMID,CHARGETYPECODE,AMOUNT,SEQUENCENO,CURRENCY,FREQUENCY,TAXCODE,LABEL,CWCREATED,CWCREATEDBY,LASTUPDATEDDATE,UPDATEDBY,TYPE,BASKETITEMCHARGEID,ITEMCHARGECODE,OVERRIDEAMOUNT,TARGETBASKETCHARGEID,ITEMCHARGERELATIONCODE,OVERRIDDENRULERESULT,DATA) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+        71         474         700         283        150  UPDATE cwpc_basket SET CWBASKETSTAMP=? WHERE BASKETID=?
+        27       1,855      15,093         365         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW15
+        24       1,661      12,899         261         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW19
+        24       1,651      12,018         364         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW4
+        24       1,648      12,083         287         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW11
+        24       1,620      11,840         358         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW14
+        24       1,610      11,851         386         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW1
+        24       1,605      12,522         331         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW7
+        24       1,603      11,706         287         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW19
+        23       1,575      12,400         268         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW12
+        22       1,487      10,153         230         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW4
+        21       1,448      14,915         272         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW5
+        21       1,422      15,554         229         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW9
+        20       1,390       9,782         407         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW18
+        20       1,364      14,169         270         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW2
+        19       1,276       6,318         342         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW6
+        19       1,273       6,429         365         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW9
+        16       1,116       9,851         313         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW17
+        16       1,112       6,613         306         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW12
+        15         399         711         230         38  SELECT CWDOCSEQ.NEXTVAL FROM DUAL
+        14         978       7,944         280         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW18
+        12         507         788         413         25  BEGIN INSERT INTO CWORDERITEMS (itemId, metadataType, topOrderId, parentId, pos, instanceKey, hasAttachment, state, process_id, search_key, ORDER_CREATION_DATE, RELATIONS, SEARCHINDEX) values(?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING pos INTO ?;END;
+        11         743       1,902         487         15  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW2
+        11         735         867         481         15  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW13
+        11         735         930         509         15  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW0
+        10         733         904         518         15  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW17
+        10         752         969         540         14  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW16
+        10         699       3,213         333         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW6
+        10         693         876         512         15  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW8
+        10         692         825         556         15  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW15
+        10         739       1,162         515         14  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW11
+        10         716         960         510         14  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW19
+         9         653         815         473         15  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW1
+         9         648         805         458         15  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW10
+         9         627         792         462         15  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW5
+         9         669         820         371         14  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW14
+         9         619         898         396         15  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW4
+         9         614         814         441         15  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW6
+         9         600         785         386         15  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW9
+         8         631         879         456         14  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW12
+         8         588         669         479         15  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW7
+         8         619         776         452         14  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW18
+         8         571         748         371         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW11
+         8         557         697         363         15  SELECT PROCESS_ID,PARENT_ID,ORDER_ID,ORDER_ITEM_ID,PROCESS_METADATYPE,ORDER_TYPE,STARTTIME,METADATATYPE_VER,REVISION,STATUS,PRIORITY,BUCKET_NO,CREATION_DATE,PE_CONVERSION_NUMBER,LAST_USED_DATE,ROOT_ID,PARENT_ACTIVITY,PDOC_IND,RESTART_DATE , process_data, GENERIC_INTERFACE_PARAM FROM CWPROCESS_NEW3
+         8         545         703         439         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW1
+         7         476         645         383         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW5
+         6         443         584         256         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW17
+         6       3,324       5,758         890          2  SELECT cwpc_basketItem.BASKETITEMID,cwpc_basketItem.BASKETID,cwpc_basketItem.ITEMCODE,cwpc_basketItem.CWCREATED,cwpc_basketItem.CWCREATEDBY,cwpc_basketItem.LASTUPDATEDDATE,cwpc_basketItem.UPDATEDBY,cwpc_basketItem.PARENTBASKETITEMID,cwpc_basketItem.RELATIONNAME,cwpc_basketItem.SEQUENCENO,cwpc_basketItem.REQUESTTIME,cwpc_basketItem.SEARCHTEXT,cwpc_basketItem.DATA,cwpc_basketItem.STATE,cwpc_basketItem.ACTION,cwpc_basketItem.CUSTOMERID,cwpc_basketItem.ACCOUNTID,cwpc_basketItem.LOCATIONID,cwpc_basketItem.SITEID,cwpc_basketItem.SERVICEDATE,cwpc_basketItem.FAMILY,cwpc_basketItem.CATEGORY,cwpc_basketItem.RELATIONS,cwpc_basketItem.ENTITYID,cwpc_basketItem.INTERNALSTATE,cwpc_basketItem.GROUPDIMENSIONS,cwpc_basketItem.CONTEXTID,cwpc_basketItem.INTERNALREASONCODE,cwpc_basketItem.LIFECYCLESTATETIMELINE,cwpc_basketItem.CURRENTLIFECYCLESTATE,cwpc_basketItem.HID,cwpc_basketItem.FULFILLMENTSTATE,cwpc_basketItem.SERIALNUMBER,cwpc_basketItem.SERVICEREGISTRYID,cwpc_basketItem.POOIACTION,cwpc_basketItem.GUID,cwpc_basketItem.PREVSTATUS,cwpc_basketItem.SOURCE,cwpc_basketItem.EFFECTIVEDATE,cwpc_basketItem.SERVICESTARTDATE,cwpc_basketItem.ISCOMPLETED,cwpc_basketItem.DESCRIPTION,cwpc_basketItem.ASSIGNEDPRIORITY,cwpc_basketItem.BITYPE,cwpc_basketItem.BISPECIFICATION,cwpc_basketItem.DUEDATE,cwpc_basketItem.COMPLETIONDATE,cwpc_basketItem.NOTES,cwpc_basketItem.ITEMNOTES,cwpc_basketItem.ISPAIRED,cwpc_basketItem.PRODUCT,cwpc_basketItem.QUANTITY,cwpc_basketItem.RESOURCES,cwpc_basketItem.SERVICES,cwpc_basketItem.ATTRS,cwpc_basketItem.EXTERNALID FROM CWPC_BASKETITEM WHERE BASKETID=?  ORDER BY SEQUENCENO
+         6         433         571         316         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW1 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         6         432         526         332         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW6 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         6         419         622         247         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW3
+         6         417         665         231         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW0
+         6         414         633         295         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW13
+         6         413         587         278         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW9 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         6         413         781         271         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW8
+         6         412         586         236         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW5 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         6         411         531         289         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW16
+         6         409         551         314         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW13
+         5         396         528         266         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW2
+         5         391         481         264         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPGLOBAL_NEW
+         5         388         511         267         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW18 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         5         388         465         280         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW16
+         5         387         456         299         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW10
+         5         385         449         271         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW17 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         5         384         528         295         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW2 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         5         380         544         227         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW13 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         5         379         503         301         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW12 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         5         379         494         215         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW14 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         5         379         562         268         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW0 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         5         377         464         252         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW8
+         5         376         556         233         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW19 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         5         372         634         260         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW11 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         5         369         436         273         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW8 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         5         368         444         226         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW15 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         5         367         684         232         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW7 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         5         364         507         220         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW7
+         5         361         502         219         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW10 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         5         359         480         300         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW4 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         5         591         882         403          9  UPDATE CWPACTIVITY_GLOBAL SET PARALLEL_COUNT=?,REPEAT_COUNT=?,STATUS=?,START_TIME_MS=?,START_TIME=?,END_TIME_MS=?,LONG_DATA_ID=?,COMPLETION_TIME=?,LONG_DATA_ID_SENT=? WHERE PROCESS_ID=? AND ACTIVITY_INDEX=?
+         5         352         397         293         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW16 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         5         351         511         254         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_NEW14
+         5         344         449         276         15  SELECT MSGID,SENDER_TYPE,CONSUMER_ID,OPERATION,SERIALIZATION_ID,ACTIVITY_INDEX,DOC_TYPE,SENDER_ID,CREATION_DATE, EARLIEST_CONSUME_TIME, PRIORITY, SENDER_BUCKET_NO, DISABLE  FROM CWPPARTICIPANT_GLOBAL_NEW3 WHERE (CONSUMER_ID IN(2928,2866,2888,2796,2902,3314,535,3440,1328,2889,3439,2901) OR CONSUMER_ID > 4999999999999999 )
+         5         342         411         276         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW15
+         5         336         390         202         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW0
+         4         332         446         193         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW10
+         4         303         412         209         15  SELECT MSGID,REQUEST_TYPE,PROCESS_METADATYPE,PROCESS_ID,ORDER_ID,PARENT_ID,ROOT_ID,AVM_ID  FROM CWPUSERPROC_CMD_NEW3
+         3         561         589         489          7  SELECT PRIVILEGE, DESCRIPTION FROM CWPRIVILEGE WHERE PRIVILEGE IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+         3         632         674         566          5  SELECT MESSAGEID,QUEUE,SKEY,MGROUP FROM CWT_DBQUEUE WHERE QUEUE = ? AND HOLD = 0 AND ARCHIVED = 0 AND (DELIVERYTIME IS NULL OR DELIVERYTIME <= SYSDATE) AND ROWNUM <= ? ORDER BY PRIORITY DESC,CREATIONTIME
+         2         932         976         854          3  SELECT DISTINCT T0.CREATEDBY,T0.CREATIONDATE,T0.UPDATEDBY,T0.LASTUPDATEDDATE,T0.ORIGINAL_ORDER_ID,T0.BASKETID,T0.OSTATE,T0.CUSTOMERID,T0.ACCOUNTID,T0.ORDERTYPE,T0.ORDVER,T0.ASSIGNEDPRIORITY,T0.REQUESTEDSTARTDATE,T0.REQUESTEDCOMPLETIONDATE,T0.DESCRIPTION,T0.EXTERNALORDERID,T0.ISBUNDLED,T0.NOTES,T0.ATTRS,T0.MODE_SC,T0.ISLOCKED,T0.RELATEDENTITIES,T0.BISPECIFICATION,T0.COMPLETIONDATE,T0.RELATEDORDERS,T0.CWDOCID
+                                                           FROM CWORDERINSTANCE T0
+                                                           WHERE T0.METADATATYPE IN (375) AND T0.OSTATE IN ('O_NR_SCH') AND T0.REQUESTEDSTARTDATE <= ?
+         2       1,319       1,434       1,205          2  select ASSOC.APPLICATIONCONTEXT,
+                                                                  ASSOC.AVERSION,
+                                                                  ASSOC.ZVERSION,
+                                                                  ASSOC.HASCOLLECTION,
+                                                                  ASSOC.HASNAMEVALUEPAIRS,
+                                                                  ASSOC.VERSION,
+                                                                  ASSOC.ISPENDING,
+                                                                  ASSOC.ASSOCIATIONTYPE,
+                                                                  ASSOC.DN,
+                                                                  ASSOC.VALIDFROMDATE,
+                                                                  ASSOC.VALIDTODATE,
+                                                                  ASSOC.CREATEDBY,
+                                                                  ASSOC.CREATEDDATE,
+                                                                  ASSOC.UPDATEDBY,
+                                                                  ASSOC.UPDATEDDATE,
+                                                                  ASSOC.STATE,
+                                                                  ASSOC.STATEDATE,
+                                                                  ASSOC.SELF,
+                                                                  ASSOC.ENTITYAPPLICATIONCONTEXT,
+                                                                  ASSOC.ENTITYTYPE,
+                                                                  ASSOC.ENTITYDN,
+                                                                  ASSOC.ISEXTERNALENTITY,
+                                                                  ASSOC.ASSOCENTITYAPPLICATIONCONTEXT,
+                                                                  ASSOC.ASSOCENTITYTYPE,
+                                                                  ASSOC.ASSOCENTITYDN,
+                                                                  ASSOC.ISEXTERNALASSOCENTITY,
+                                                                  ASSOC.SEARCHTEXT,
+                                                                  ASSOC.DATA,
+                                                                  ASSOC.CUSTOMERRELATEDDN,
+                                                                  ASSOC.PRODUCTRELATEDDN,
+                                                                  ENTITY.APPLICATIONCONTEXT,
+                                                                  ENTITY.HASCOLLECTION,
+                                                                  ENTITY.HASNAMEVALUEPAIRS,
+                                                                  ENTITY.VERSION,
+                                                                  ENTITY.ISPENDING,
+                                                                  ENTITY.ENTITYTYPE,
+                                                                  ENTITY.DN,
+                                                                  ENTITY.VALIDFROMDATE,
+                                                                  ENTITY.VALIDTODATE,
+                                                                  ENTITY.CREATEDBY,
+                                                                  ENTITY.CREATEDDATE,
+                                                                  ENTITY.UPDATEDBY,
+                                                                  ENTITY.UPDATEDDATE,
+                                                                  ENTITY.STATE,
+                                                                  ENTITY.STATEDATE,
+                                                                  ENTITY.HIERARCHICALNAMING,
+                                                                  ENTITY.AUTONAMED,
+                                                                  ENTITY.CUSTOMERID,
+                                                                  ENTITY.ACCOUNTID,
+                                                                  ENTITY.LOCATIONID,
+                                                                  ENTITY.SITEID,
+                                                                  ENTITY.SERVICEDATE,
+                                                                  ENTITY.REQUESTDATE,
+                                                                  ENTITY.FAMILY,
+                                                                  ENTITY.CATEGORY,
+                                                                  ENTITY.CATALOGCODE,
+                                                                  ENTITY.CATALOGTYPE,
+                                                                  ENTITY.PARENTENTITYTYPE,
+                                                                  ENTITY.PARENTASSOCNAME,
+                                                                  ENTITY.PARENTDN,
+                                                                  ENTITY.ORDERID,
+                                                                  ENTITY.SEARCHTEXT,
+                                                                  ENTITY.DATA,
+                                                                  PRICE.ID,
+                                                                  PRICE.VERSION,
+                                                                  PRICE.NAME,
+                                                                  PRICE.DESCRIPTION,
+                                                                  PRICE.AMOUNT,
+                                                                  PRICE.TAXCODE,
+                                                                  PRICE.CHARGETYPECODE,
+                                                                  PRICE.FREQUENCY,
+                                                                  PRICE.CURRENCY,
+                                                                  PRICE.POPID,
+                                                                  PRICE.PRICETYPE,
+                                                                  PRICE.EXTERNALIDS,
+                                                                  PRICE.UNITOFMEASURE,
+                                                                  PRICE.OVERRIDEAMOUNT,
+                                                                  PRODUCT.ID,
+                                                                  PRODUCT.VERSION,
+                                                                  PRODUCT.NAME,
+                                                                  PRODUCT.PRODUCTSERIALNUMBER,
+                                                                  PRODUCT.ISBUNDLE,
+                                                                  PRODUCT.ISCUSTOMERVISIBLE,
+                                                                  PRODUCT.PRODUCTSPECIFICATION,
+                                                                  PRODUCT.PRODUCTOFFERING,
+                                                                  PRODUCT.QUANTITYAMOUNT,
+                                                                  PRODUCT.QUANTITYUNIT,
+                                                                  PRODUCT.DESCRIPTION,
+                                                                  RES.ID,
+                                                                  RES.VERSION,
+                                                                  RES.NAME,
+                                                                  RES.EXTERNALID,
+                                                                  RES.ISCOMPOUND,
+                                                                  RES.ISLOGICAL,
+                                                                  RES.type,
+                                                                  RES.RESOURCENUMBER,
+                                                                  RES.SERIALNUMBER,
+                                                                  SER.ID,
+                                                                  SER.VERSION,
+                                                                  SER.type,
+                                                                  SER.SERVICECANDIDATE,
+                                                                  SER.SERVICESPECIFICATION,
+                                                                  SER.NAME,
+                                                                  SER.ISSERVICEENABLED,
+                                                                  SER.HASSTARTED,
+                                                                  SER.ISMANDATORY,
+                                                                  SER.STARTMODE,
+                                                                  SER.ISSTATEFUL,
+                                                                  SER.STATUSREASON,
+                                                                  case ENTITY.HASCOLLECTION
+                                                                    when 'Y' then (select CD.DATA
+                                                                                   from   CWT_SR_CONTEXTDATA CD
+                                                                                   where  CD.PARENTDN = TARGET
+                                                                                          and CD.PARENTVERSION = TARGETVERSION
+                                                                                          and rownum <= 1)
+                                                                    else null
+                                                                  end as CONTEXTDATA,
+                                                                  PRODUCT.EXTERNALID,
+                                                                  SER.EXTERNALID
+                                                           from
+                                                           
+                                                           (
+                                                                 select ASSOC3.ASSOCENTITYDN as TARGET,
+                                                                        case when ASSOC3.ASSOCENTITYTYPE = 'Service' or
+                                                                                  ASSOC3.ASSOCENTITYTYPE = 'Resource' then
+                                                           
+                                                                            (select version from CWT_SR_CUR_VERSION where ASSOC3.ASSOCENTITYDN = DN)
+                                                           
+                                                                        else
+                                                                             ASSOC3.MAXVERSION
+                                                                        end as TARGETVERSION,
+                                                                        ASSOC3.*
+                                                                 from
+                                                                 (
+                                                                     select ASSOC1.*, max(version) over (partition by ASSOCIATIONTYPE, ENTITYDN, ASSOCENTITYDN) as MAXVERSION
+                                                                     from   CWT_SR_ASSOCIATIONACT ASSOC1
+                                                                     where  ASSOC1.CUSTOMERRELATEDDN =  ? || ''
+                                                           
+                                                                 ) ASSOC3
+                                                                 where MAXVERSION = version
+                                                                   and exists (
+                                                                      select DN
+                                                                      from CWT_SR_CUR_VERSION
+                                                                      where DN = ASSOC3.PRODUCTRELATEDDN and ISARCHIVED != 'Y'
+                                                                      and ((ASSOC3.ASSOCENTITYTYPE = 'Service' or
+                                                                            ASSOC3.ASSOCENTITYTYPE = 'Resource' or
+                                                                            ASSOC3.ASSOCENTITYTYPE = 'ProductPrice' or
+                                                                            ASSOC3.APPLICATIONCONTEXT = 'ProductRelationships' or
+                                                                            ASSOC3.APPLICATIONCONTEXT = 'ProductProduct') or
+                                                                            ASSOC3.VERSION = VERSION
+                                                                      )
+                                                                   )
+                                                           
+                                                           ) ASSOC
+                                                           
+                                                           left join CWT_SR_ENTITYACT ENTITY
+                                                                 on ENTITY.DN = TARGET
+                                                                    and ENTITY.VERSION = TARGETVERSION
+                                                           left join CWT_SR_PRODPRICE PRICE
+                                                                 on PRICE.ID = TARGET
+                                                                    and PRICE.VERSION = TARGETVERSION
+                                                           left join CWT_SR_PRODUCT PRODUCT
+                                                                 on PRODUCT.ID = TARGET
+                                                                    and PRODUCT.VERSION = TARGETVERSION
+                                                           left join CWT_SR_RESOURCE RES
+                                                                 on RES.ID = TARGET
+                                                                    and RES.VERSION = TARGETVERSION
+                                                           left join CWT_SR_SERVICE SER
+                                                                 on SER.id = TARGET
+                                                                    and SER.VERSION = TARGETVERSION
+         2       2,002       2,002       2,002          1  UPDATE CWT_ON_RID SET REFERENCE = 1084 where REQUEST_ID = -1965013313
+         1         450         545         303          4  SELECT T0.ID,T0.OBJECTDESCRIPTION,T0.PARTYSPECIFICATION,T0.ENTITYSPECIFICATION,T0.DEPENDENTENTITYNAME,T0.ORDERID,T0.NAMEVALUESEARCHKEY,T0.NAMESEARCHKEY,T0.CWPARENTID,T0.OBJECTCLASS,T0.NAME,T0.VALUE,T0.DATA,T0.IDENTIFIER,T0.CREATEDBY,T0.CREATEDON,T0.UPDATEDON,T0.GUID,T0.OWNER FROM CWT_DO_RELATEDOBJECTS T0 WHERE T0.ID=?
+         1         569         624         525          3  SELECT PRIVILEGE FROM CWUSERGROUPPRIVILEGE WHERE PROFILEPROVIDER = ? AND USERGROUP = ?
+         1         376         526         300          4  INSERT INTO CWT_DO_RELATEDOBJECTS(ID,OBJECTDESCRIPTION,PARTYSPECIFICATION,ENTITYSPECIFICATION,DEPENDENTENTITYNAME,ORDERID,NAMEVALUESEARCHKEY,NAMESEARCHKEY,CWPARENTID,OBJECTCLASS,NAME,VALUE,DATA,IDENTIFIER,CREATEDBY,CREATEDON,UPDATEDON,GUID,OWNER) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+         1         296         364         224          4  INSERT INTO CWT_DO_OBJECTRELATIONS(ID,CWORDERID,CWPARENTID,SOURCEOBJECTID,TARGETOBJECTID,RELATIONTYPE,CREATEDBY,CREATEDON,UPDATEDON) VALUES (?,?,?,?,?,?,?,?,?)
+         1       1,022       1,022       1,022          1  SELECT T0.CWDOCID,T0.CREATEDBY,T0.CREATIONDATE,T0.UPDATEDBY,T0.LASTUPDATEDDATE,T0.STATE,T0.METADATATYPE,T0.STATUS,T0.VISUALKEY,T0.PRODUCTCODE,T0.PARENTORDER,T0.OWNER,T0.STATE2,T0.HASATTACHMENT,T0.METADATATYPE_VER,T0.ORIGINAL_ORDER_ID,T0.SOURCE_ORDER_ID,T0.KIND_OF_ORDER,T0.ORDER_PHASE,T0.PROJECT_ID,T0.PROCESS_ID,T0.DUEDATE,T0.CWDOCSTAMP,T0.CWORDERSTAMP,T0.APP_NAME,T0.CWUSERROLE,T0.BASKETID,T0.OSTATE,T0.CUSTOMERID,T0.ACCOUNTID,T0.ORDERTYPE,T0.ORDERSUBTYPE,T0.RELATEDORDER,T0.ORDERNUM,T0.ORDVER,T0.EFFECTIVEDATE,T0.SUBMITTEDBY,T0.SUBMITTEDDATE,T0.PRICE,T0.ONETIMEPRICE,T0.PRICEDON,T0.CORRELATIONID,T0.QUOTEID,T0.CHANNEL,T0.EXPIRATIONDATE,T0.QUOTEEXPIRATIONDATE,T0.ASSIGNEDPRIORITY,T0.REQUESTEDSTARTDATE,T0.REQUESTEDCOMPLETIONDATE,T0.DESCRIPTION,T0.BITYPE,T0.EXTERNALORDERID,T0.ISBUNDLED,T0.NOTES,T0.ATTRS,T0.MODE_SC,T0.ISLOCKED,T0.RELATEDENTITIES,T0.REQUESTER,T0.BISPECIFICATION,T0.RELATEDSCS,T0.QUOTEON,T0.COMPLETIONDATE,T0.RELATEDORDERS,T0.EXTENDEDSTATE,T0.ORDERROLE,T0.ORDERIDREF,T0.PREVOSTATE,T0.PMPROJECTID,T0.PMPROJECTTYPE FROM CWORDERINSTANCE T0 WHERE T0.CWDOCID=?
+         0         484         568         400          2  SELECT cwpc_basketItemRelation.BASKETITEMIDFROM,cwpc_basketItemRelation.BASKETITEMIDTO,cwpc_basketItemRelation.RELATIONNAME,cwpc_basketItemRelation.CWCREATED,cwpc_basketItemRelation.CWCREATEDBY,cwpc_basketItemRelation.LASTUPDATEDDATE,cwpc_basketItemRelation.UPDATEDBY,cwpc_basketItemRelation.BASKETID,cwpc_basketItemRelation.BASKETITEMRELATIONID,cwpc_basketItemRelation.INTERNALSTATE,cwpc_basketItemRelation.EFFECTIVEDATE,cwpc_basketItemRelation.STATUS,cwpc_basketItemRelation.SOURCE,cwpc_basketItemRelation.GUID,cwpc_basketItemRelation.PERCENTAGE,cwpc_basketItemRelation.USERFLAG FROM CWPC_BASKETITEMRELATION WHERE BASKETID=?
+         0         225         256         180          4  SELECT T0.ID,T0.CWORDERID,T0.CWPARENTID,T0.SOURCEOBJECTID,T0.TARGETOBJECTID,T0.RELATIONTYPE,T0.CREATEDBY,T0.CREATEDON,T0.UPDATEDON FROM CWT_DO_OBJECTRELATIONS T0 WHERE T0.ID=?
+         0         658         658         658          1  call UPDATECUSTOMERASSOCIATIONS(?)
+         0         653         653         653          1  INSERT INTO CWORDERINSTANCE(CWDOCID,CREATEDBY,CREATIONDATE,UPDATEDBY,LASTUPDATEDDATE,STATE,METADATATYPE,STATUS,VISUALKEY,PRODUCTCODE,PARENTORDER,OWNER,STATE2,HASATTACHMENT,METADATATYPE_VER,ORIGINAL_ORDER_ID,SOURCE_ORDER_ID,KIND_OF_ORDER,ORDER_PHASE,PROJECT_ID,PROCESS_ID,DUEDATE,CWDOCSTAMP,CWORDERSTAMP,APP_NAME,CWUSERROLE,BASKETID,OSTATE,CUSTOMERID,ACCOUNTID,ORDERTYPE,ORDERSUBTYPE,RELATEDORDER,ORDERNUM,ORDVER,EFFECTIVEDATE,SUBMITTEDBY,SUBMITTEDDATE,PRICE,ONETIMEPRICE,PRICEDON,CORRELATIONID,QUOTEID,CHANNEL,EXPIRATIONDATE,QUOTEEXPIRATIONDATE,ASSIGNEDPRIORITY,REQUESTEDSTARTDATE,REQUESTEDCOMPLETIONDATE,DESCRIPTION,BITYPE,EXTERNALORDERID,ISBUNDLED,NOTES,ATTRS,MODE_SC,ISLOCKED,RELATEDENTITIES,REQUESTER,BISPECIFICATION,RELATEDSCS,QUOTEON,COMPLETIONDATE,RELATEDORDERS,EXTENDEDSTATE,ORDERROLE,ORDERIDREF,PREVOSTATE,PMPROJECTID,PMPROJECTTYPE) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+         0         636         636         636          1  SELECT AVM_ID,IP,LASTUPDATEDDATE,0,JMXPORT,0,HOST,0,TOTALMEMORY,NUMBERPROCESSES,CW_PORT,STARTTIME,NULL,ACTIVATED_IVERSION,ACTIVATED_VERSION,NODE_MODE,SYSDATE,APP_NAME,CONFIG_NODE FROM CWVMINFO WHERE APP_NAME=?
+         0         606         606         606          1  SELECT T0.USERID,T0.USER_NAME,T0.DOMAIN,T0.EMAIL,T0.ACTIVE,T0.AVAILABLE,T0.PROFILEID,T0.MINTASKS,T0.MAXTASKS,T0.POSITIONID,T0.OUTOFOFFICE FROM CWUSER T0 WHERE T0.USERID=?
+         0         568         568         568          1  INSERT INTO cwpc_basket(BASKETID,CWCREATED,CWCREATEDBY,LASTUPDATEDDATE,UPDATEDBY,CWORDERID,STATE,CWBASKETSTAMP,TYPE,CONTEXTID) VALUES (?,?,?,?,?,?,?,?,?,?)
+         0         565         565         565          1  INSERT INTO CWT_ON_RID(REQUEST_ID,ID,OPERATION,OWNER,CREATED,REFERENCE) VALUES (?,?,?,?,?,?)
+         0         280         369         190          2  SELECT T0.BASKETID,T0.CWCREATED,T0.CWCREATEDBY,T0.LASTUPDATEDDATE,T0.UPDATEDBY,T0.CWORDERID,T0.STATE,T0.CWBASKETSTAMP,T0.TYPE,T0.CONTEXTID FROM cwpc_basket T0 WHERE T0.BASKETID=?
+         0         539         539         539          1  SELECT PREFERENCES FROM CWUSER WHERE USERID = ?
+         0         517         517         517          1  SELECT T0.REQUEST_ID,T0.ID,T0.OPERATION,T0.OWNER,T0.CREATED,T0.REFERENCE FROM CWT_ON_RID T0 WHERE T0.REQUEST_ID=?
+         0         512         512         512          1  SELECT itemId, pos, instanceKey, hasAttachment, state, process_id, parentId, search_key, relations, SEARCHINDEX FROM CWOrderItems WHERE topOrderId=? ORDER BY parentId,pos
+         0         495         495         495          1  SELECT PRIVILEGE, DESCRIPTION FROM CWPRIVILEGE WHERE PRIVILEGE IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+         0         480         480         480          1  SELECT T0.USERID,T0.ROLEID,T0.ACTIVE,T0.MANAGER
+                                                           FROM CWUSERROLE T0
+                                                           WHERE upper(T0.USERID) LIKE ?
+         0         473         473         473          1  UPDATE CWORDERINSTANCE SET CREATEDBY=?,CREATIONDATE=?,UPDATEDBY=?,LASTUPDATEDDATE=?,STATE=?,METADATATYPE=?,VISUALKEY=?,OWNER=?,HASATTACHMENT=?,CWDOCSTAMP=?,CWORDERSTAMP=?,APP_NAME=?,BASKETID=?,OSTATE=?,CUSTOMERID=?,ORDERTYPE=?,ORDERNUM=?,QUOTEID=?,EXPIRATIONDATE=?,DESCRIPTION=?,ISBUNDLED=?,NOTES=?,MODE_SC=?,ISLOCKED=?,REQUESTER=?,PMPROJECTID=? WHERE CWDOCID=?
+         0         425         425         425          1  SELECT CWT_ON_ORDERNUM_SEQ.nextval from dual
+         0         414         414         414          1  SELECT T0.ID,T0.CWDOCSTAMP,T0.LASTUPDATEDDATE,T0.CWORDERCREATIONDATE,T0.CWORDERID,T0.CWPARENTID,T0.UPDATEDBY,T0.GUID,T0.SITEID,T0.SITETYPE,T0.SITEMOVETO,T0.SITEMOVEFROM,T0.STATUS,T0.SOURCE,T0.ADDRESSID FROM CWT_DO_SITE T0 WHERE T0.ID=?
+         0         376         376         376          1  SELECT PRIVILEGE, DESCRIPTION FROM CWPRIVILEGE WHERE PRIVILEGE IN (?,?)
+         0         348         348         348          1  INSERT INTO CWT_DO_SITE(ID,CWDOCSTAMP,LASTUPDATEDDATE,CWORDERCREATIONDATE,CWORDERID,CWPARENTID,UPDATEDBY,GUID,SITEID,SITETYPE,SITEMOVETO,SITEMOVEFROM,STATUS,SOURCE,ADDRESSID) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+         0         339         339         339          1  INSERT INTO CWT_DO_ACCOUNT(ID,CWDOCSTAMP,CWORDERCREATIONDATE,LASTUPDATEDDATE,CWPARENTID,CWORDERID,UPDATEDBY,ACCOUNTID,GUID,SOURCE,STATUS) VALUES (?,?,?,?,?,?,?,?,?,?,?)
+         0         337         337         337          1  SELECT T0.ID,T0.CWDOCSTAMP,T0.CWORDERCREATIONDATE,T0.LASTUPDATEDDATE,T0.CWPARENTID,T0.CWORDERID,T0.UPDATEDBY,T0.ACCOUNTID,T0.GUID,T0.SOURCE,T0.STATUS FROM CWT_DO_ACCOUNT T0 WHERE T0.ID=?
+         0         311         311         311          1  SELECT PRIVILEGE, DESCRIPTION FROM CWPRIVILEGE WHERE PRIVILEGE IN (?,?,?)
+         0         306         306         306          1  SELECT CWBASKETSTAMP FROM CWPC_BASKET WHERE BASKETID=?
+    -----------------------------------------------------
+     2,805         977      53,701         180      2,871
+
+
+ ********* 2018-05-06 18:50:41 Duration: 00:00:15 *********
+---------- Activity Operation Durations ----------
+     TOTAL     AVERAGE     LONGEST    SHORTEST      COUNT  ELEMENT
+  millisec    microsec    microsec    microsec
+        79      26,542      45,874      13,956          3  cwl_om.scheduledOrderProcess/start/loopBack(2)
+        54      18,302      31,100      11,885          3  cwl_om.scheduledOrderProcess/start/evaluate(1)
+        33      11,249      12,193       9,709          3  cwl_om.scheduledOrderProcess/start(0)
+    -----------------------------------------------------
+       168      18,698      45,874       9,709          9
+
+
+ ********* 2018-05-06 18:50:41 Duration: 00:00:15 *********
+---------- INTERFACE OPERATIONS ----------
+     TOTAL     AVERAGE     LONGEST    SHORTEST      COUNT  ELEMENT
+  millisec    microsec    microsec    microsec
+     9,602   9,602,282   9,602,282   9,602,282          1  on.service.onapi/createShoppingCart
+    -----------------------------------------------------
+     9,602   9,602,282   9,602,282   9,602,282          1
