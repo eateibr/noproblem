@@ -34,8 +34,9 @@
 
                     <br />
 
-                    <p-tabView *ngFor="let prof of profilerList">
-                    <p-tabPanel header="{{prof.name}}">
+                    <p-carousel  [value]="profilerList" numVisible="1" easing="easeOutStrong" >
+                        <ng-template let-prof pTemplate="prof">
+                    {{prof.name}}
                     <p-accordion >
                       <p-accordionTab *ngIf="prof.addedScripts ? true : false" header="Added Scripts {{prof.name}} - Time Difference: {{prof.timeImprovement}}">
                         <p-table [value]="prof.addedScripts.scripts" [paginator]="true" [rows]="10" >
@@ -106,8 +107,8 @@
                         </p-table>
                       </p-accordionTab>
                     </p-accordion>
-                  </p-tabPanel>
-                  </p-tabView>
+                  </ng-template>
+                  </p-carousel>
                     <br />
                   </p>
                 </div>
